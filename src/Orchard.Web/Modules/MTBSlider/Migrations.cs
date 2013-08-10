@@ -16,10 +16,10 @@ namespace MTBSlider {
 
             SchemaBuilder.CreateTable("MTBSliderPartRecord", 
                 table => table.ContentPartRecord()
-                .Column("Image1Source", DbType.String)
-                .Column("Image2Source", DbType.String)
-                .Column("Image3Source", DbType.String)
-                .Column("Image4Source", DbType.String)
+                .Column("Item1ImageUrl", DbType.String)
+                .Column("Item2ImageUrl", DbType.String)
+                .Column("Item3ImageUrl", DbType.String)
+                .Column("Item4ImageUrl", DbType.String)
                 );
 
             ContentDefinitionManager.AlterPartDefinition("MTBSliderPartRecord",

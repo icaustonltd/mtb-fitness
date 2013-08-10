@@ -15,16 +15,16 @@ namespace MTBSlider.Drivers
         protected override DriverResult Display(MTBSliderPart part, string displayType, dynamic shapeHelper)
         {
             return ContentShape("Parts_MTBSlider", () => shapeHelper.Parts_MTBSlider(
-                Image1Source: part.Item1ImageUrl,
+                Item1ImageUrl: part.Item1ImageUrl,
                 Item1Title: part.Item1Title,
-                Item1Text: part.Item1ImageUrl,
-                Image2Source: part.Item2ImageUrl,
+                Item1Text: part.Item1Text,
+                Item2ImageUrl: part.Item2ImageUrl,
                 Item2Title: part.Item2Title,
                 Item2Text: part.Item2Text,
-                Image3Source: part.Item3ImageUrl,
+                Item3ImageUrl: part.Item3ImageUrl,
                 Item3Title: part.Item3Title,
                 Item3Text: part.Item3Text,
-                Image4Source: part.Item4ImageUrl,
+                Item4ImageUrl: part.Item4ImageUrl,
                 Item4Title: part.Item4Title,
                 Item4Text: part.Item4Text
                 ));

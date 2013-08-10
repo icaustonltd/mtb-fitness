@@ -3,3 +3,7 @@ C:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Modules\Orchard.MultiTena
 C:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Modules\Orchard.MultiTenancy\obj\Debug\Orchard.MultiTenancy.dll
 C:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Modules\Orchard.MultiTenancy\obj\Debug\Orchard.MultiTenancy.pdb
 C:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Modules\Orchard.MultiTenancy\obj\Debug\Orchard.MultiTenancy.csprojResolveAssemblyReference.cache
+C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Orchard.Web\Modules\Orchard.MultiTenancy\bin\Orchard.MultiTenancy.dll
+C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Orchard.Web\Modules\Orchard.MultiTenancy\bin\Orchard.MultiTenancy.pdb
+C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Orchard.Web\Modules\Orchard.MultiTenancy\obj\Debug\Orchard.MultiTenancy.dll
+C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Orchard.Web\Modules\Orchard.MultiTenancy\obj\Debug\Orchard.MultiTenancy.pdb

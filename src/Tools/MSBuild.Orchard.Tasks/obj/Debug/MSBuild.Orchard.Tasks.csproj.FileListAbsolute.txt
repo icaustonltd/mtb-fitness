@@ -2,3 +2,8 @@ C:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Tools\MSBuild.Orchard.Tasks\bin\Debug
 C:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Tools\MSBuild.Orchard.Tasks\bin\Debug\MSBuild.Orchard.Tasks.pdb
 C:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Tools\MSBuild.Orchard.Tasks\obj\Debug\MSBuild.Orchard.Tasks.dll
 C:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Tools\MSBuild.Orchard.Tasks\obj\Debug\MSBuild.Orchard.Tasks.pdb
+C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Tools\MSBuild.Orchard.Tasks\bin\Debug\MSBuild.Orchard.Tasks.dll
+C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Tools\MSBuild.Orchard.Tasks\bin\Debug\MSBuild.Orchard.Tasks.pdb
+C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Tools\MSBuild.Orchard.Tasks\obj\Debug\MSBuild.Orchard.Tasks.dll
+C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Tools\MSBuild.Orchard.Tasks\obj\Debug\MSBuild.Orchard.Tasks.pdb
+C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Tools\MSBuild.Orchard.Tasks\obj\Debug\MSBuild.Orchard.Tasks.csprojResolveAssemblyReference.cache
