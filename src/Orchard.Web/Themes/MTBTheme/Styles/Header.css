@@ -1,0 +1,110 @@
+﻿/* =============================================================================
+    Start : Selectors 
+   ============================================================================= */
+
+
+/* =============================================================================
+    Start : Classes 
+   ============================================================================= */
+
+
+/* =============================================================================
+    Start : Id's 
+   ============================================================================= */
+
+#header-container {
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:10px;
+}
+#header-container header {
+	background: #900507; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzkwMDUwNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZDFjMjQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(left,  #900507 0%, #ed1c24 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#900507), color-stop(100%,#ed1c24)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #900507 0%,#ed1c24 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #900507 0%,#ed1c24 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #900507 0%,#ed1c24 100%); /* IE10+ */
+	background: linear-gradient(to right,  #900507 0%,#ed1c24 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#900507', endColorstr='#ed1c24',GradientType=1 ); /* IE6-8 */
+	-webkit-border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+
+
+	height:60px;
+}
+
+#title{ 
+	margin-top: 17px;
+	text-indent: -3000px; 
+	white-space: nowrap; 
+	background:url(../Content/Images/logo.png);
+	width:300px;
+	height:65px;
+    float:left;
+}
+
+#social-links {
+	float: right;
+    position: relative;
+    right: 18px;
+    top: -23px;
+}
+#social-links ul {
+	list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#social-links li {
+	float:left;
+	
+}
+#facebook-icon {
+	background: url("../Content/Images/facebook-icon.png") repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 22px;
+    text-indent: -3000px;
+    width: 23px;
+}
+#twitter-icon {
+	background: url("../Content/Images/twitter-icon.png") repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 22px;
+    text-indent: -3000px;
+    width: 23px;
+}
+#linkedin-icon {
+	background: url("../Content/Images/linkedin-icon.png") repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 22px;
+    text-indent: -3000px;
+    width: 23px;
+}
+
+
+#login-form {
+	padding-top:16px;
+	padding-left:20px;
+	line-height: 20px;
+}
+#login-form form span {
+	position: relative;
+    top: 3px;
+	color:#fff;
+	font-size:20px;
+	font-style:italic
+}
+#login-form form input {
+	border: medium none;
+    color: #939598;
+    font-size: 11px;
+    height: 20px;
+    margin-left: 20px;
+    padding-left: 6px;
+    width: 170px;
+}

@@ -1,0 +1,345 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>MTBFitness</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <meta name="viewport" content="width=device-width">
+   	
+	<style type="text/css" media="screen">
+
+
+body { margin: 0; font-size: 1em; line-height: 1.4; }
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+html, button, input, select, textarea { font-family: sans-serif; color: #222; }
+form { margin: 0; }
+
+/* ===== Initializr Styles =====================================================*/
+
+body{ font:16px/26px Helvetica, Helvetica Neue, Arial; }
+
+/* ===================
+    ALL: Main Theme
+   =================== */
+.wrapper{
+		width:913px; /* 1140px - 10% for margins */
+	margin:0 auto;
+}
+#header-container {
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:10px;
+}
+
+#header-container header {
+	background: #900507; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzkwMDUwNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZDFjMjQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(left,  #900507 0%, #ed1c24 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#900507), color-stop(100%,#ed1c24)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #900507 0%,#ed1c24 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #900507 0%,#ed1c24 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #900507 0%,#ed1c24 100%); /* IE10+ */
+	background: linear-gradient(to right,  #900507 0%,#ed1c24 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#900507', endColorstr='#ed1c24',GradientType=1 ); /* IE6-8 */
+	-webkit-border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+
+
+	height:60px;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+    display: block;
+}
+
+#footer-container{ 
+	background-color: #231F20; 
+	margin-top:25px;
+}
+
+#social-links {
+	padding-top:16px;
+	padding-left:20px;
+	line-height: 20px;
+	float: right;
+    position: relative;
+    right: 18px;
+}
+#social-links ul {
+	list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#social-links li {
+	float:left;
+	
+}
+#facebook-icon {
+	background: url("http://www.apnm-studio.co.uk/mtb/img/facebook-icon.png") repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 22px;
+    text-indent: -3000px;
+    width: 23px;
+}
+#twitter-icon {
+	background: url("http://www.apnm-studio.co.uk/mtb/img/twitter-icon.png") repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 22px;
+    text-indent: -3000px;
+    width: 23px;
+}
+#linkedin-icon {
+	background: url("http://www.apnm-studio.co.uk/mtb/img/linkedin-icon.png") repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 22px;
+    text-indent: -3000px;
+    width: 23px;
+}
+
+#title{ 
+	margin-top: 17px;
+	text-indent: -3000px; 
+	white-space: nowrap; 
+	background:url(http://www.apnm-studio.co.uk/mtb/img/logo.png);
+	width:300px;
+	height:65px;
+}
+
+/* Banner
+================================================== */
+
+.clearfix:before, .clearfix:after, .row:before, .row:after {
+    content: " ";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+}
+.row:after, .clearfix:after {
+    clear: both;
+}
+.row, .clearfix {
+}
+#banner {
+	background: #8c0305; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzhjMDMwNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZDFjMjQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #8c0305 0%, #ed1c24 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8c0305), color-stop(100%,#ed1c24)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #8c0305 0%,#ed1c24 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #8c0305 0%,#ed1c24 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #8c0305 0%,#ed1c24 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #8c0305 0%,#ed1c24 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c0305', endColorstr='#ed1c24',GradientType=0 ); /* IE6-8 */
+
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    width: 97.7%;
+    z-index: 1;
+}
+
+.backcolr {
+	background: #900507; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzkwMDUwNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZDFjMjQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(left,  #900507 0%, #ed1c24 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#900507), color-stop(100%,#ed1c24)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #900507 0%,#ed1c24 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #900507 0%,#ed1c24 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #900507 0%,#ed1c24 100%); /* IE10+ */
+	background: linear-gradient(to right,  #900507 0%,#ed1c24 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#900507', endColorstr='#ed1c24',GradientType=1 ); /* IE6-8 */
+	-webkit-border-top-left-radius: 12px;
+	-webkit-border-top-right-radius: 12px;
+	-moz-border-radius-topleft: 12px;
+	-moz-border-radius-topright: 12px;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	margin:0;
+	font-style:italic;
+}
+
+.top ul li a{
+	color: #9D9FA2;
+    display: block;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+.top ul li a:hover{
+	color:#231f20;
+	text-decoration:none;
+}
+.top a:visited {
+	color:#9d9fa2;
+}
+
+
+.bottom {
+	
+}
+.bottom ul li a{
+	color: #fff;
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    
+    text-align: center;
+    text-decoration: none;
+}
+
+.bottom ul li a:hover{
+	color:#9d9fa2;
+	text-decoration:none;
+}
+.bottom a:visited {
+	color:#fff;
+}
+
+
+#main{
+	
+}
+
+#main article h1{
+	font-size:2em;
+}
+
+#footer-container footer{
+	color:white;
+	padding:20px 0;
+	height: 110px;
+}
+nav a{
+	float:left;
+	margin-bottom:0;
+}
+	
+nav > ul > li:first-child a{ margin-left:0;  }
+nav > ul > li:last-child  a{ margin-right:0; }
+
+.subnav {
+	position:absolute;
+	z-index:10000;
+	display:none;
+}
+.subnav > li > a {
+	float:none;
+	text-align:left!important;
+	margin-bottom:0px!important;
+	background:#FFFFFF;
+	border-bottom:1px dotted #cacaca;
+	padding:0 5px 0 5px;
+}
+#title{
+	float:left;
+}
+
+nav{
+	float:left;
+	width:100%;
+}
+
+#main article{
+	float:left;
+	width:57%;
+}
+
+/* Standard Page 1
+================================================== */
+.standard1-container
+{
+	margin-top:15px;
+	margin-left:35px;
+	font-size:22px;
+	font-style:italic;
+	margin-bottom:50px;
+}
+
+/* =============================================================================
+   Non-Semantic Helper Classes
+   ========================================================================== */
+
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
+.ir br { display: none; }
+.hidden { display: none !important; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+.clear {clear:both;}
+
+
+
+</style>
+
+<!--[if lt IE 9]>
+    <script src="js/libs/html5-3.4-respond-1.1.0.min.js"></script>
+<![endif]-->
+</head>
+<body>
+	<div id="header-container" class="wrapper clearfix">
+		<header>	
+			<div id="social-links">
+			    <ul>
+			        <li><a id="facebook-icon" href="http://www.facebook.com/mtbfitnesstraining" target="_blank">MTB Fitness Facebook Profile</a></li>
+			        <li><a id="twitter-icon" href="#">MTB Fitness Twitter Profile</a></li>
+			    </ul>
+			</div>
+		</header>
+		<h1 id="title">MTB Fitness</h1>
+	</div>
+	<div class="clear"></div>
+	<div id="main-container">
+		<div id="main" class="wrapper clearfix">
+
+			<div class='standard1-container'>
+                    <div class='standard1-container-title'>
+                        <h3 style='color:#231f20;'>Title for page...</h3>
+                    </div>
+                    <div class='standard1-body' style='color:#231f20'>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                        
+                        <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                    </div>
+             </div>
+			
+			<!-- Content End -->
+		</div> <!-- #main -->
+	</div> <!-- #main-container -->
+    <div class="clear"></div>
+	<div id="footer-container">
+		
+	</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+
+<script src="js/plugins.js"></script>
+<script src="js/libs/jquery.nivo.slider.js"></script>
+
+<script src="js/script.js"></script>
+</body>
+</html>

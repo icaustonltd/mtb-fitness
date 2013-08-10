@@ -1,0 +1,9 @@
+Name: MTBTheme
+Author: I Causton Ltd
+Website: http://www.mtb-fitness.co.uk
+Description: Description for the MTB Fitness Site
+Version: 1.0
+BaseTheme: TheThemeMachine
+# todo: provide tags
+# Tags: Classic, Serif
+Zones: Header, Navigation, Featured, BeforeContent, Content, AfterContent, TripelFirst, TripelSecond, TripelThird, Footer

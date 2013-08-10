@@ -1,0 +1,24 @@
+﻿@using Orchard.Utility.Extensions;
+@{
+    if (Model.Title != null) {
+        Layout.Title = Model.Title;
+    }
+    
+    var contentTypeClassName = ((string)Model.ContentItem.ContentType).HtmlClassify();
+}
+
+<div class="standard1-container @contentTypeClassName">
+    <div class="standard1-container-title">
+        @Display(Model.Header)
+    </div>
+
+    <div class='standard1-body' style='color:#231f20'>
+    @Display(Model.Content)
+    </div>
+
+    @if(Model.Footer != null) {
+    <footer>
+        @Display(Model.Footer)
+    </footer>
+    }
+</div>

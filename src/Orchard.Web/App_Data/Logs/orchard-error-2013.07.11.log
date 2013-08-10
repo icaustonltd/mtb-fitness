@@ -1,0 +1,850 @@
+2013-07-11 12:04:12,773 [5] Orchard.Environment.DefaultOrchardHost - A tenant could not be started: Default
+NHibernate.PropertyNotFoundException: Could not find a getter for property 'image1Source' in class 'MTBSlider.Models.MTBSliderPartRecord'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappingInfo)
+   at NHibernate.Tuple.Entity.PocoEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappedEntity)
+   at NHibernate.Tuple.Entity.EntityEntityModeToTuplizerMapping..ctor(PersistentClass mappedEntity, EntityMetamodel em)
+   at NHibernate.Tuple.Entity.EntityMetamodel..ctor(PersistentClass persistentClass, ISessionFactoryImplementor sessionFactory)
+   at NHibernate.Persister.Entity.AbstractEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory)
+   at NHibernate.Persister.Entity.SingleTableEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping mapping)
+   at NHibernate.Persister.PersisterFactory.CreateClassPersister(PersistentClass model, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping cfg)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at Orchard.Data.SessionFactoryHolder.BuildSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 87
+   at Orchard.Data.SessionFactoryHolder.GetSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 65
+   at Orchard.Data.SessionLocator.For(Type entityType) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionLocator.cs:line 29
+   at Orchard.Data.Repository`1.get_Session() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 26
+   at Orchard.Data.Repository`1.get_Table() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 30
+   at Orchard.Data.Repository`1.Fetch(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 126
+   at Orchard.Data.Repository`1.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 91
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 60
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 57
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 30
+   at Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs:line 66
+   at Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 174
+   at Orchard.Environment.DefaultOrchardHost.CreateAndActivateShells() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 134
+2013-07-11 12:04:13,154 [5] Orchard.Environment.DefaultOrchardHost - A tenant could not be started: Default
+NHibernate.PropertyNotFoundException: Could not find a getter for property 'image1Source' in class 'MTBSlider.Models.MTBSliderPartRecord'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappingInfo)
+   at NHibernate.Tuple.Entity.PocoEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappedEntity)
+   at NHibernate.Tuple.Entity.EntityEntityModeToTuplizerMapping..ctor(PersistentClass mappedEntity, EntityMetamodel em)
+   at NHibernate.Tuple.Entity.EntityMetamodel..ctor(PersistentClass persistentClass, ISessionFactoryImplementor sessionFactory)
+   at NHibernate.Persister.Entity.AbstractEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory)
+   at NHibernate.Persister.Entity.SingleTableEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping mapping)
+   at NHibernate.Persister.PersisterFactory.CreateClassPersister(PersistentClass model, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping cfg)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at Orchard.Data.SessionFactoryHolder.BuildSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 87
+   at Orchard.Data.SessionFactoryHolder.GetSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 65
+   at Orchard.Data.SessionLocator.For(Type entityType) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionLocator.cs:line 29
+   at Orchard.Data.Repository`1.get_Session() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 26
+   at Orchard.Data.Repository`1.get_Table() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 30
+   at Orchard.Data.Repository`1.Fetch(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 126
+   at Orchard.Data.Repository`1.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 91
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 60
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 57
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 30
+   at Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs:line 66
+   at Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 174
+   at Orchard.Environment.DefaultOrchardHost.CreateAndActivateShells() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 134
+2013-07-11 12:04:13,524 [7] Orchard.Environment.DefaultOrchardHost - A tenant could not be started: Default
+NHibernate.PropertyNotFoundException: Could not find a getter for property 'image1Source' in class 'MTBSlider.Models.MTBSliderPartRecord'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappingInfo)
+   at NHibernate.Tuple.Entity.PocoEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappedEntity)
+   at NHibernate.Tuple.Entity.EntityEntityModeToTuplizerMapping..ctor(PersistentClass mappedEntity, EntityMetamodel em)
+   at NHibernate.Tuple.Entity.EntityMetamodel..ctor(PersistentClass persistentClass, ISessionFactoryImplementor sessionFactory)
+   at NHibernate.Persister.Entity.AbstractEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory)
+   at NHibernate.Persister.Entity.SingleTableEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping mapping)
+   at NHibernate.Persister.PersisterFactory.CreateClassPersister(PersistentClass model, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping cfg)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at Orchard.Data.SessionFactoryHolder.BuildSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 87
+   at Orchard.Data.SessionFactoryHolder.GetSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 65
+   at Orchard.Data.SessionLocator.For(Type entityType) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionLocator.cs:line 29
+   at Orchard.Data.Repository`1.get_Session() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 26
+   at Orchard.Data.Repository`1.get_Table() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 30
+   at Orchard.Data.Repository`1.Fetch(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 126
+   at Orchard.Data.Repository`1.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 91
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 60
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 57
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 30
+   at Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs:line 66
+   at Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 174
+   at Orchard.Environment.DefaultOrchardHost.CreateAndActivateShells() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 134
+2013-07-11 12:04:14,335 [5] Orchard.Environment.DefaultOrchardHost - A tenant could not be started: Default
+NHibernate.PropertyNotFoundException: Could not find a getter for property 'image1Source' in class 'MTBSlider.Models.MTBSliderPartRecord'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappingInfo)
+   at NHibernate.Tuple.Entity.PocoEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappedEntity)
+   at NHibernate.Tuple.Entity.EntityEntityModeToTuplizerMapping..ctor(PersistentClass mappedEntity, EntityMetamodel em)
+   at NHibernate.Tuple.Entity.EntityMetamodel..ctor(PersistentClass persistentClass, ISessionFactoryImplementor sessionFactory)
+   at NHibernate.Persister.Entity.AbstractEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory)
+   at NHibernate.Persister.Entity.SingleTableEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping mapping)
+   at NHibernate.Persister.PersisterFactory.CreateClassPersister(PersistentClass model, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping cfg)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at Orchard.Data.SessionFactoryHolder.BuildSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 87
+   at Orchard.Data.SessionFactoryHolder.GetSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 65
+   at Orchard.Data.SessionLocator.For(Type entityType) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionLocator.cs:line 29
+   at Orchard.Data.Repository`1.get_Session() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 26
+   at Orchard.Data.Repository`1.get_Table() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 30
+   at Orchard.Data.Repository`1.Fetch(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 126
+   at Orchard.Data.Repository`1.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 91
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 60
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 57
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 30
+   at Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs:line 66
+   at Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 174
+   at Orchard.Environment.DefaultOrchardHost.CreateAndActivateShells() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 134
+2013-07-11 12:04:19,868 [6] Orchard.Environment.DefaultOrchardHost - A tenant could not be started: Default
+NHibernate.PropertyNotFoundException: Could not find a getter for property 'image1Source' in class 'MTBSlider.Models.MTBSliderPartRecord'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappingInfo)
+   at NHibernate.Tuple.Entity.PocoEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappedEntity)
+   at NHibernate.Tuple.Entity.EntityEntityModeToTuplizerMapping..ctor(PersistentClass mappedEntity, EntityMetamodel em)
+   at NHibernate.Tuple.Entity.EntityMetamodel..ctor(PersistentClass persistentClass, ISessionFactoryImplementor sessionFactory)
+   at NHibernate.Persister.Entity.AbstractEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory)
+   at NHibernate.Persister.Entity.SingleTableEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping mapping)
+   at NHibernate.Persister.PersisterFactory.CreateClassPersister(PersistentClass model, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping cfg)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at Orchard.Data.SessionFactoryHolder.BuildSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 87
+   at Orchard.Data.SessionFactoryHolder.GetSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 65
+   at Orchard.Data.SessionLocator.For(Type entityType) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionLocator.cs:line 29
+   at Orchard.Data.Repository`1.get_Session() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 26
+   at Orchard.Data.Repository`1.get_Table() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 30
+   at Orchard.Data.Repository`1.Fetch(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 126
+   at Orchard.Data.Repository`1.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 91
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 60
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 57
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 30
+   at Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs:line 66
+   at Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 174
+   at Orchard.Environment.DefaultOrchardHost.CreateAndActivateShells() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 134
+2013-07-11 12:04:23,134 [7] Orchard.Environment.DefaultOrchardHost - A tenant could not be started: Default
+NHibernate.PropertyNotFoundException: Could not find a getter for property 'image1Source' in class 'MTBSlider.Models.MTBSliderPartRecord'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappingInfo)
+   at NHibernate.Tuple.Entity.PocoEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappedEntity)
+   at NHibernate.Tuple.Entity.EntityEntityModeToTuplizerMapping..ctor(PersistentClass mappedEntity, EntityMetamodel em)
+   at NHibernate.Tuple.Entity.EntityMetamodel..ctor(PersistentClass persistentClass, ISessionFactoryImplementor sessionFactory)
+   at NHibernate.Persister.Entity.AbstractEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory)
+   at NHibernate.Persister.Entity.SingleTableEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping mapping)
+   at NHibernate.Persister.PersisterFactory.CreateClassPersister(PersistentClass model, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping cfg)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at Orchard.Data.SessionFactoryHolder.BuildSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 87
+   at Orchard.Data.SessionFactoryHolder.GetSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 65
+   at Orchard.Data.SessionLocator.For(Type entityType) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionLocator.cs:line 29
+   at Orchard.Data.Repository`1.get_Session() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 26
+   at Orchard.Data.Repository`1.get_Table() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 30
+   at Orchard.Data.Repository`1.Fetch(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 126
+   at Orchard.Data.Repository`1.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 91
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 60
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 57
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 30
+   at Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs:line 66
+   at Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 174
+   at Orchard.Environment.DefaultOrchardHost.CreateAndActivateShells() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 134
+2013-07-11 12:07:47,728 [7] Orchard.Environment.DefaultOrchardHost - A tenant could not be started: Default
+NHibernate.PropertyNotFoundException: Could not find a getter for property 'image1Source' in class 'MTBSlider.Models.MTBSliderPartRecord'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappingInfo)
+   at NHibernate.Tuple.Entity.PocoEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappedEntity)
+   at NHibernate.Tuple.Entity.EntityEntityModeToTuplizerMapping..ctor(PersistentClass mappedEntity, EntityMetamodel em)
+   at NHibernate.Tuple.Entity.EntityMetamodel..ctor(PersistentClass persistentClass, ISessionFactoryImplementor sessionFactory)
+   at NHibernate.Persister.Entity.AbstractEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory)
+   at NHibernate.Persister.Entity.SingleTableEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping mapping)
+   at NHibernate.Persister.PersisterFactory.CreateClassPersister(PersistentClass model, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping cfg)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at Orchard.Data.SessionFactoryHolder.BuildSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 87
+   at Orchard.Data.SessionFactoryHolder.GetSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 65
+   at Orchard.Data.SessionLocator.For(Type entityType) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionLocator.cs:line 29
+   at Orchard.Data.Repository`1.get_Session() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 26
+   at Orchard.Data.Repository`1.get_Table() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 30
+   at Orchard.Data.Repository`1.Fetch(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 126
+   at Orchard.Data.Repository`1.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 91
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 60
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 57
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 30
+   at Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs:line 66
+   at Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 174
+   at Orchard.Environment.DefaultOrchardHost.CreateAndActivateShells() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 134
+2013-07-11 12:07:48,034 [7] Orchard.Environment.DefaultOrchardHost - A tenant could not be started: Default
+NHibernate.PropertyNotFoundException: Could not find a getter for property 'image1Source' in class 'MTBSlider.Models.MTBSliderPartRecord'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappingInfo)
+   at NHibernate.Tuple.Entity.PocoEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappedEntity)
+   at NHibernate.Tuple.Entity.EntityEntityModeToTuplizerMapping..ctor(PersistentClass mappedEntity, EntityMetamodel em)
+   at NHibernate.Tuple.Entity.EntityMetamodel..ctor(PersistentClass persistentClass, ISessionFactoryImplementor sessionFactory)
+   at NHibernate.Persister.Entity.AbstractEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory)
+   at NHibernate.Persister.Entity.SingleTableEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping mapping)
+   at NHibernate.Persister.PersisterFactory.CreateClassPersister(PersistentClass model, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping cfg)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at Orchard.Data.SessionFactoryHolder.BuildSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 87
+   at Orchard.Data.SessionFactoryHolder.GetSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 65
+   at Orchard.Data.SessionLocator.For(Type entityType) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionLocator.cs:line 29
+   at Orchard.Data.Repository`1.get_Session() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 26
+   at Orchard.Data.Repository`1.get_Table() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 30
+   at Orchard.Data.Repository`1.Fetch(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 126
+   at Orchard.Data.Repository`1.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 91
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 60
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 57
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 30
+   at Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs:line 66
+   at Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 174
+   at Orchard.Environment.DefaultOrchardHost.CreateAndActivateShells() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 134
+2013-07-11 12:07:48,343 [5] Orchard.Environment.DefaultOrchardHost - A tenant could not be started: Default
+NHibernate.PropertyNotFoundException: Could not find a getter for property 'image1Source' in class 'MTBSlider.Models.MTBSliderPartRecord'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappingInfo)
+   at NHibernate.Tuple.Entity.PocoEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappedEntity)
+   at NHibernate.Tuple.Entity.EntityEntityModeToTuplizerMapping..ctor(PersistentClass mappedEntity, EntityMetamodel em)
+   at NHibernate.Tuple.Entity.EntityMetamodel..ctor(PersistentClass persistentClass, ISessionFactoryImplementor sessionFactory)
+   at NHibernate.Persister.Entity.AbstractEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory)
+   at NHibernate.Persister.Entity.SingleTableEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping mapping)
+   at NHibernate.Persister.PersisterFactory.CreateClassPersister(PersistentClass model, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping cfg)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at Orchard.Data.SessionFactoryHolder.BuildSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 87
+   at Orchard.Data.SessionFactoryHolder.GetSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 65
+   at Orchard.Data.SessionLocator.For(Type entityType) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionLocator.cs:line 29
+   at Orchard.Data.Repository`1.get_Session() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 26
+   at Orchard.Data.Repository`1.get_Table() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 30
+   at Orchard.Data.Repository`1.Fetch(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 126
+   at Orchard.Data.Repository`1.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 91
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 60
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 57
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 30
+   at Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs:line 66
+   at Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 174
+   at Orchard.Environment.DefaultOrchardHost.CreateAndActivateShells() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 134
+2013-07-11 12:10:07,000 [13] Orchard.Environment.DefaultOrchardHost - A tenant could not be started: Default
+NHibernate.PropertyNotFoundException: Could not find a getter for property 'image1Source' in class 'MTBSlider.Models.MTBSliderPartRecord'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappingInfo)
+   at NHibernate.Tuple.Entity.PocoEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappedEntity)
+   at NHibernate.Tuple.Entity.EntityEntityModeToTuplizerMapping..ctor(PersistentClass mappedEntity, EntityMetamodel em)
+   at NHibernate.Tuple.Entity.EntityMetamodel..ctor(PersistentClass persistentClass, ISessionFactoryImplementor sessionFactory)
+   at NHibernate.Persister.Entity.AbstractEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory)
+   at NHibernate.Persister.Entity.SingleTableEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping mapping)
+   at NHibernate.Persister.PersisterFactory.CreateClassPersister(PersistentClass model, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping cfg)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at Orchard.Data.SessionFactoryHolder.BuildSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 87
+   at Orchard.Data.SessionFactoryHolder.GetSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 65
+   at Orchard.Data.SessionLocator.For(Type entityType) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionLocator.cs:line 29
+   at Orchard.Data.Repository`1.get_Session() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 26
+   at Orchard.Data.Repository`1.get_Table() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 30
+   at Orchard.Data.Repository`1.Fetch(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 126
+   at Orchard.Data.Repository`1.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 91
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 60
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 57
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 30
+   at Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs:line 66
+   at Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 174
+   at Orchard.Environment.DefaultOrchardHost.CreateAndActivateShells() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 134
+2013-07-11 12:55:00,740 [5] Orchard.Environment.DefaultOrchardHost - A tenant could not be started: Default
+NHibernate.PropertyNotFoundException: Could not find a getter for property 'Image1Source' in class 'MTBSlider.Models.MTBSliderPartRecord'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappingInfo)
+   at NHibernate.Tuple.Entity.PocoEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappedEntity)
+   at NHibernate.Tuple.Entity.EntityEntityModeToTuplizerMapping..ctor(PersistentClass mappedEntity, EntityMetamodel em)
+   at NHibernate.Tuple.Entity.EntityMetamodel..ctor(PersistentClass persistentClass, ISessionFactoryImplementor sessionFactory)
+   at NHibernate.Persister.Entity.AbstractEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory)
+   at NHibernate.Persister.Entity.SingleTableEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping mapping)
+   at NHibernate.Persister.PersisterFactory.CreateClassPersister(PersistentClass model, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping cfg)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at Orchard.Data.SessionFactoryHolder.BuildSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 87
+   at Orchard.Data.SessionFactoryHolder.GetSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 65
+   at Orchard.Data.SessionLocator.For(Type entityType) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionLocator.cs:line 29
+   at Orchard.Data.Repository`1.get_Session() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 26
+   at Orchard.Data.Repository`1.get_Table() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 30
+   at Orchard.Data.Repository`1.Fetch(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 126
+   at Orchard.Data.Repository`1.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 91
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 60
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 57
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 30
+   at Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs:line 66
+   at Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 174
+   at Orchard.Environment.DefaultOrchardHost.CreateAndActivateShells() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 134
+2013-07-11 12:55:01,063 [5] Orchard.Environment.DefaultOrchardHost - A tenant could not be started: Default
+NHibernate.PropertyNotFoundException: Could not find a getter for property 'Image1Source' in class 'MTBSlider.Models.MTBSliderPartRecord'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappingInfo)
+   at NHibernate.Tuple.Entity.PocoEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappedEntity)
+   at NHibernate.Tuple.Entity.EntityEntityModeToTuplizerMapping..ctor(PersistentClass mappedEntity, EntityMetamodel em)
+   at NHibernate.Tuple.Entity.EntityMetamodel..ctor(PersistentClass persistentClass, ISessionFactoryImplementor sessionFactory)
+   at NHibernate.Persister.Entity.AbstractEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory)
+   at NHibernate.Persister.Entity.SingleTableEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping mapping)
+   at NHibernate.Persister.PersisterFactory.CreateClassPersister(PersistentClass model, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping cfg)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at Orchard.Data.SessionFactoryHolder.BuildSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 87
+   at Orchard.Data.SessionFactoryHolder.GetSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 65
+   at Orchard.Data.SessionLocator.For(Type entityType) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionLocator.cs:line 29
+   at Orchard.Data.Repository`1.get_Session() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 26
+   at Orchard.Data.Repository`1.get_Table() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 30
+   at Orchard.Data.Repository`1.Fetch(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 126
+   at Orchard.Data.Repository`1.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 91
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 60
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 57
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 30
+   at Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs:line 66
+   at Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 174
+   at Orchard.Environment.DefaultOrchardHost.CreateAndActivateShells() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 134
+2013-07-11 12:55:01,377 [8] Orchard.Environment.DefaultOrchardHost - A tenant could not be started: Default
+NHibernate.PropertyNotFoundException: Could not find a getter for property 'Image1Source' in class 'MTBSlider.Models.MTBSliderPartRecord'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappingInfo)
+   at NHibernate.Tuple.Entity.PocoEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappedEntity)
+   at NHibernate.Tuple.Entity.EntityEntityModeToTuplizerMapping..ctor(PersistentClass mappedEntity, EntityMetamodel em)
+   at NHibernate.Tuple.Entity.EntityMetamodel..ctor(PersistentClass persistentClass, ISessionFactoryImplementor sessionFactory)
+   at NHibernate.Persister.Entity.AbstractEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory)
+   at NHibernate.Persister.Entity.SingleTableEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping mapping)
+   at NHibernate.Persister.PersisterFactory.CreateClassPersister(PersistentClass model, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping cfg)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at Orchard.Data.SessionFactoryHolder.BuildSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 87
+   at Orchard.Data.SessionFactoryHolder.GetSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 65
+   at Orchard.Data.SessionLocator.For(Type entityType) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionLocator.cs:line 29
+   at Orchard.Data.Repository`1.get_Session() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 26
+   at Orchard.Data.Repository`1.get_Table() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 30
+   at Orchard.Data.Repository`1.Fetch(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 126
+   at Orchard.Data.Repository`1.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 91
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 60
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 57
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 30
+   at Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs:line 66
+   at Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 174
+   at Orchard.Environment.DefaultOrchardHost.CreateAndActivateShells() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 134
+2013-07-11 12:55:57,363 [6] Orchard.Environment.DefaultOrchardHost - A tenant could not be started: Default
+NHibernate.PropertyNotFoundException: Could not find a getter for property 'Image1Source' in class 'MTBSlider.Models.MTBSliderPartRecord'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappingInfo)
+   at NHibernate.Tuple.Entity.PocoEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappedEntity)
+   at NHibernate.Tuple.Entity.EntityEntityModeToTuplizerMapping..ctor(PersistentClass mappedEntity, EntityMetamodel em)
+   at NHibernate.Tuple.Entity.EntityMetamodel..ctor(PersistentClass persistentClass, ISessionFactoryImplementor sessionFactory)
+   at NHibernate.Persister.Entity.AbstractEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory)
+   at NHibernate.Persister.Entity.SingleTableEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping mapping)
+   at NHibernate.Persister.PersisterFactory.CreateClassPersister(PersistentClass model, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping cfg)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at Orchard.Data.SessionFactoryHolder.BuildSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 87
+   at Orchard.Data.SessionFactoryHolder.GetSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 65
+   at Orchard.Data.SessionLocator.For(Type entityType) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionLocator.cs:line 29
+   at Orchard.Data.Repository`1.get_Session() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 26
+   at Orchard.Data.Repository`1.get_Table() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 30
+   at Orchard.Data.Repository`1.Fetch(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 126
+   at Orchard.Data.Repository`1.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 91
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 60
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 57
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 30
+   at Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs:line 66
+   at Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 174
+   at Orchard.Environment.DefaultOrchardHost.CreateAndActivateShells() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 134
+2013-07-11 12:57:11,186 [6] Orchard.Environment.DefaultOrchardHost - A tenant could not be started: Default
+NHibernate.PropertyNotFoundException: Could not find a getter for property 'Image1Source' in class 'MTBSlider.Models.MTBSliderPartRecord'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappingInfo)
+   at NHibernate.Tuple.Entity.PocoEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappedEntity)
+   at NHibernate.Tuple.Entity.EntityEntityModeToTuplizerMapping..ctor(PersistentClass mappedEntity, EntityMetamodel em)
+   at NHibernate.Tuple.Entity.EntityMetamodel..ctor(PersistentClass persistentClass, ISessionFactoryImplementor sessionFactory)
+   at NHibernate.Persister.Entity.AbstractEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory)
+   at NHibernate.Persister.Entity.SingleTableEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping mapping)
+   at NHibernate.Persister.PersisterFactory.CreateClassPersister(PersistentClass model, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping cfg)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at Orchard.Data.SessionFactoryHolder.BuildSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 87
+   at Orchard.Data.SessionFactoryHolder.GetSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 65
+   at Orchard.Data.SessionLocator.For(Type entityType) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionLocator.cs:line 29
+   at Orchard.Data.Repository`1.get_Session() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 26
+   at Orchard.Data.Repository`1.get_Table() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 30
+   at Orchard.Data.Repository`1.Fetch(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 126
+   at Orchard.Data.Repository`1.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 91
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 60
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 57
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 30
+   at Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs:line 66
+   at Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 174
+   at Orchard.Environment.DefaultOrchardHost.CreateAndActivateShells() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 134
+2013-07-11 13:36:55,440 [6] Orchard.Environment.DefaultOrchardHost - A tenant could not be started: Default
+NHibernate.PropertyNotFoundException: Could not find a getter for property 'Image1Source' in class 'MTBSlider.Models.MTBSliderPartRecord'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappingInfo)
+   at NHibernate.Tuple.Entity.PocoEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappedEntity)
+   at NHibernate.Tuple.Entity.EntityEntityModeToTuplizerMapping..ctor(PersistentClass mappedEntity, EntityMetamodel em)
+   at NHibernate.Tuple.Entity.EntityMetamodel..ctor(PersistentClass persistentClass, ISessionFactoryImplementor sessionFactory)
+   at NHibernate.Persister.Entity.AbstractEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory)
+   at NHibernate.Persister.Entity.SingleTableEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping mapping)
+   at NHibernate.Persister.PersisterFactory.CreateClassPersister(PersistentClass model, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping cfg)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at Orchard.Data.SessionFactoryHolder.BuildSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 87
+   at Orchard.Data.SessionFactoryHolder.GetSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 65
+   at Orchard.Data.SessionLocator.For(Type entityType) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionLocator.cs:line 29
+   at Orchard.Data.Repository`1.get_Session() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 26
+   at Orchard.Data.Repository`1.get_Table() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 30
+   at Orchard.Data.Repository`1.Fetch(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 126
+   at Orchard.Data.Repository`1.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 91
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 60
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 57
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 30
+   at Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs:line 66
+   at Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 174
+   at Orchard.Environment.DefaultOrchardHost.CreateAndActivateShells() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 134
+2013-07-11 13:36:55,827 [6] Orchard.Environment.DefaultOrchardHost - A tenant could not be started: Default
+NHibernate.PropertyNotFoundException: Could not find a getter for property 'Image1Source' in class 'MTBSlider.Models.MTBSliderPartRecord'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappingInfo)
+   at NHibernate.Tuple.Entity.PocoEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappedEntity)
+   at NHibernate.Tuple.Entity.EntityEntityModeToTuplizerMapping..ctor(PersistentClass mappedEntity, EntityMetamodel em)
+   at NHibernate.Tuple.Entity.EntityMetamodel..ctor(PersistentClass persistentClass, ISessionFactoryImplementor sessionFactory)
+   at NHibernate.Persister.Entity.AbstractEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory)
+   at NHibernate.Persister.Entity.SingleTableEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping mapping)
+   at NHibernate.Persister.PersisterFactory.CreateClassPersister(PersistentClass model, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping cfg)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at Orchard.Data.SessionFactoryHolder.BuildSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 87
+   at Orchard.Data.SessionFactoryHolder.GetSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 65
+   at Orchard.Data.SessionLocator.For(Type entityType) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionLocator.cs:line 29
+   at Orchard.Data.Repository`1.get_Session() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 26
+   at Orchard.Data.Repository`1.get_Table() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 30
+   at Orchard.Data.Repository`1.Fetch(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 126
+   at Orchard.Data.Repository`1.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 91
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 60
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 57
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 30
+   at Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs:line 66
+   at Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 174
+   at Orchard.Environment.DefaultOrchardHost.CreateAndActivateShells() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 134
+2013-07-11 13:36:56,186 [8] Orchard.Environment.DefaultOrchardHost - A tenant could not be started: Default
+NHibernate.PropertyNotFoundException: Could not find a getter for property 'Image1Source' in class 'MTBSlider.Models.MTBSliderPartRecord'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappingInfo)
+   at NHibernate.Tuple.Entity.PocoEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappedEntity)
+   at NHibernate.Tuple.Entity.EntityEntityModeToTuplizerMapping..ctor(PersistentClass mappedEntity, EntityMetamodel em)
+   at NHibernate.Tuple.Entity.EntityMetamodel..ctor(PersistentClass persistentClass, ISessionFactoryImplementor sessionFactory)
+   at NHibernate.Persister.Entity.AbstractEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory)
+   at NHibernate.Persister.Entity.SingleTableEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping mapping)
+   at NHibernate.Persister.PersisterFactory.CreateClassPersister(PersistentClass model, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping cfg)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at Orchard.Data.SessionFactoryHolder.BuildSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 87
+   at Orchard.Data.SessionFactoryHolder.GetSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 65
+   at Orchard.Data.SessionLocator.For(Type entityType) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionLocator.cs:line 29
+   at Orchard.Data.Repository`1.get_Session() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 26
+   at Orchard.Data.Repository`1.get_Table() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 30
+   at Orchard.Data.Repository`1.Fetch(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 126
+   at Orchard.Data.Repository`1.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 91
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 60
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 57
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 30
+   at Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs:line 66
+   at Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 174
+   at Orchard.Environment.DefaultOrchardHost.CreateAndActivateShells() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 134
+2013-07-11 13:38:47,549 [11] Orchard.Environment.DefaultOrchardHost - A tenant could not be started: Default
+NHibernate.PropertyNotFoundException: Could not find a getter for property 'Image1Source' in class 'MTBSlider.Models.MTBSliderPartRecord'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappingInfo)
+   at NHibernate.Tuple.Entity.PocoEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappedEntity)
+   at NHibernate.Tuple.Entity.EntityEntityModeToTuplizerMapping..ctor(PersistentClass mappedEntity, EntityMetamodel em)
+   at NHibernate.Tuple.Entity.EntityMetamodel..ctor(PersistentClass persistentClass, ISessionFactoryImplementor sessionFactory)
+   at NHibernate.Persister.Entity.AbstractEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory)
+   at NHibernate.Persister.Entity.SingleTableEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping mapping)
+   at NHibernate.Persister.PersisterFactory.CreateClassPersister(PersistentClass model, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping cfg)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at Orchard.Data.SessionFactoryHolder.BuildSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 87
+   at Orchard.Data.SessionFactoryHolder.GetSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 65
+   at Orchard.Data.SessionLocator.For(Type entityType) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionLocator.cs:line 29
+   at Orchard.Data.Repository`1.get_Session() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 26
+   at Orchard.Data.Repository`1.get_Table() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 30
+   at Orchard.Data.Repository`1.Fetch(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 126
+   at Orchard.Data.Repository`1.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 91
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 60
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 57
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 30
+   at Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs:line 66
+   at Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 174
+   at Orchard.Environment.DefaultOrchardHost.CreateAndActivateShells() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 134
+2013-07-11 13:38:47,848 [11] Orchard.Environment.DefaultOrchardHost - A tenant could not be started: Default
+NHibernate.PropertyNotFoundException: Could not find a getter for property 'Image1Source' in class 'MTBSlider.Models.MTBSliderPartRecord'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappingInfo)
+   at NHibernate.Tuple.Entity.PocoEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappedEntity)
+   at NHibernate.Tuple.Entity.EntityEntityModeToTuplizerMapping..ctor(PersistentClass mappedEntity, EntityMetamodel em)
+   at NHibernate.Tuple.Entity.EntityMetamodel..ctor(PersistentClass persistentClass, ISessionFactoryImplementor sessionFactory)
+   at NHibernate.Persister.Entity.AbstractEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory)
+   at NHibernate.Persister.Entity.SingleTableEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping mapping)
+   at NHibernate.Persister.PersisterFactory.CreateClassPersister(PersistentClass model, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping cfg)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at Orchard.Data.SessionFactoryHolder.BuildSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 87
+   at Orchard.Data.SessionFactoryHolder.GetSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 65
+   at Orchard.Data.SessionLocator.For(Type entityType) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionLocator.cs:line 29
+   at Orchard.Data.Repository`1.get_Session() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 26
+   at Orchard.Data.Repository`1.get_Table() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 30
+   at Orchard.Data.Repository`1.Fetch(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 126
+   at Orchard.Data.Repository`1.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 91
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 60
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 57
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 30
+   at Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs:line 66
+   at Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 174
+   at Orchard.Environment.DefaultOrchardHost.CreateAndActivateShells() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 134
+2013-07-11 13:38:48,247 [13] Orchard.Environment.DefaultOrchardHost - A tenant could not be started: Default
+NHibernate.PropertyNotFoundException: Could not find a getter for property 'Image1Source' in class 'MTBSlider.Models.MTBSliderPartRecord'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappingInfo)
+   at NHibernate.Tuple.Entity.PocoEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappedEntity)
+   at NHibernate.Tuple.Entity.EntityEntityModeToTuplizerMapping..ctor(PersistentClass mappedEntity, EntityMetamodel em)
+   at NHibernate.Tuple.Entity.EntityMetamodel..ctor(PersistentClass persistentClass, ISessionFactoryImplementor sessionFactory)
+   at NHibernate.Persister.Entity.AbstractEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory)
+   at NHibernate.Persister.Entity.SingleTableEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping mapping)
+   at NHibernate.Persister.PersisterFactory.CreateClassPersister(PersistentClass model, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping cfg)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at Orchard.Data.SessionFactoryHolder.BuildSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 87
+   at Orchard.Data.SessionFactoryHolder.GetSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 65
+   at Orchard.Data.SessionLocator.For(Type entityType) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionLocator.cs:line 29
+   at Orchard.Data.Repository`1.get_Session() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 26
+   at Orchard.Data.Repository`1.get_Table() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 30
+   at Orchard.Data.Repository`1.Fetch(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 126
+   at Orchard.Data.Repository`1.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 91
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 60
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 57
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 30
+   at Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs:line 66
+   at Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 174
+   at Orchard.Environment.DefaultOrchardHost.CreateAndActivateShells() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 134
+2013-07-11 13:40:16,195 [13] Orchard.Environment.DefaultOrchardHost - A tenant could not be started: Default
+NHibernate.PropertyNotFoundException: Could not find a getter for property 'Image1Source' in class 'MTBSlider.Models.MTBSliderPartRecord'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappingInfo)
+   at NHibernate.Tuple.Entity.PocoEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappedEntity)
+   at NHibernate.Tuple.Entity.EntityEntityModeToTuplizerMapping..ctor(PersistentClass mappedEntity, EntityMetamodel em)
+   at NHibernate.Tuple.Entity.EntityMetamodel..ctor(PersistentClass persistentClass, ISessionFactoryImplementor sessionFactory)
+   at NHibernate.Persister.Entity.AbstractEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory)
+   at NHibernate.Persister.Entity.SingleTableEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping mapping)
+   at NHibernate.Persister.PersisterFactory.CreateClassPersister(PersistentClass model, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping cfg)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at Orchard.Data.SessionFactoryHolder.BuildSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 87
+   at Orchard.Data.SessionFactoryHolder.GetSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 65
+   at Orchard.Data.SessionLocator.For(Type entityType) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionLocator.cs:line 29
+   at Orchard.Data.Repository`1.get_Session() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 26
+   at Orchard.Data.Repository`1.get_Table() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 30
+   at Orchard.Data.Repository`1.Fetch(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 126
+   at Orchard.Data.Repository`1.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 91
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 60
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 57
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 30
+   at Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs:line 66
+   at Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 174
+   at Orchard.Environment.DefaultOrchardHost.CreateAndActivateShells() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 134
+2013-07-11 13:40:17,023 [13] Orchard.Environment.DefaultOrchardHost - A tenant could not be started: Default
+NHibernate.PropertyNotFoundException: Could not find a getter for property 'Image1Source' in class 'MTBSlider.Models.MTBSliderPartRecord'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappingInfo)
+   at NHibernate.Tuple.Entity.PocoEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappedEntity)
+   at NHibernate.Tuple.Entity.EntityEntityModeToTuplizerMapping..ctor(PersistentClass mappedEntity, EntityMetamodel em)
+   at NHibernate.Tuple.Entity.EntityMetamodel..ctor(PersistentClass persistentClass, ISessionFactoryImplementor sessionFactory)
+   at NHibernate.Persister.Entity.AbstractEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory)
+   at NHibernate.Persister.Entity.SingleTableEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping mapping)
+   at NHibernate.Persister.PersisterFactory.CreateClassPersister(PersistentClass model, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping cfg)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at Orchard.Data.SessionFactoryHolder.BuildSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 87
+   at Orchard.Data.SessionFactoryHolder.GetSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 65
+   at Orchard.Data.SessionLocator.For(Type entityType) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionLocator.cs:line 29
+   at Orchard.Data.Repository`1.get_Session() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 26
+   at Orchard.Data.Repository`1.get_Table() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 30
+   at Orchard.Data.Repository`1.Fetch(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 126
+   at Orchard.Data.Repository`1.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 91
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 60
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 57
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 30
+   at Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs:line 66
+   at Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 174
+   at Orchard.Environment.DefaultOrchardHost.CreateAndActivateShells() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 134
+2013-07-11 14:29:02,397 [6] Orchard.Environment.DefaultOrchardHost - A tenant could not be started: Default
+NHibernate.PropertyNotFoundException: Could not find a getter for property 'Image2Source' in class 'MTBSlider.Models.MTBSliderPartRecord'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappingInfo)
+   at NHibernate.Tuple.Entity.PocoEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappedEntity)
+   at NHibernate.Tuple.Entity.EntityEntityModeToTuplizerMapping..ctor(PersistentClass mappedEntity, EntityMetamodel em)
+   at NHibernate.Tuple.Entity.EntityMetamodel..ctor(PersistentClass persistentClass, ISessionFactoryImplementor sessionFactory)
+   at NHibernate.Persister.Entity.AbstractEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory)
+   at NHibernate.Persister.Entity.SingleTableEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping mapping)
+   at NHibernate.Persister.PersisterFactory.CreateClassPersister(PersistentClass model, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping cfg)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at Orchard.Data.SessionFactoryHolder.BuildSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 87
+   at Orchard.Data.SessionFactoryHolder.GetSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 65
+   at Orchard.Data.SessionLocator.For(Type entityType) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionLocator.cs:line 29
+   at Orchard.Data.Repository`1.get_Session() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 26
+   at Orchard.Data.Repository`1.get_Table() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 30
+   at Orchard.Data.Repository`1.Fetch(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 126
+   at Orchard.Data.Repository`1.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 91
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 60
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 57
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 30
+   at Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs:line 66
+   at Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 174
+   at Orchard.Environment.DefaultOrchardHost.CreateAndActivateShells() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 134
+2013-07-11 14:29:02,776 [6] Orchard.Environment.DefaultOrchardHost - A tenant could not be started: Default
+NHibernate.PropertyNotFoundException: Could not find a getter for property 'Image2Source' in class 'MTBSlider.Models.MTBSliderPartRecord'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappingInfo)
+   at NHibernate.Tuple.Entity.PocoEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappedEntity)
+   at NHibernate.Tuple.Entity.EntityEntityModeToTuplizerMapping..ctor(PersistentClass mappedEntity, EntityMetamodel em)
+   at NHibernate.Tuple.Entity.EntityMetamodel..ctor(PersistentClass persistentClass, ISessionFactoryImplementor sessionFactory)
+   at NHibernate.Persister.Entity.AbstractEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory)
+   at NHibernate.Persister.Entity.SingleTableEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping mapping)
+   at NHibernate.Persister.PersisterFactory.CreateClassPersister(PersistentClass model, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping cfg)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at Orchard.Data.SessionFactoryHolder.BuildSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 87
+   at Orchard.Data.SessionFactoryHolder.GetSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 65
+   at Orchard.Data.SessionLocator.For(Type entityType) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionLocator.cs:line 29
+   at Orchard.Data.Repository`1.get_Session() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 26
+   at Orchard.Data.Repository`1.get_Table() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 30
+   at Orchard.Data.Repository`1.Fetch(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 126
+   at Orchard.Data.Repository`1.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 91
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 60
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 57
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 30
+   at Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs:line 66
+   at Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 174
+   at Orchard.Environment.DefaultOrchardHost.CreateAndActivateShells() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 134
+2013-07-11 14:29:03,057 [7] Orchard.Environment.DefaultOrchardHost - A tenant could not be started: Default
+NHibernate.PropertyNotFoundException: Could not find a getter for property 'Image2Source' in class 'MTBSlider.Models.MTBSliderPartRecord'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappingInfo)
+   at NHibernate.Tuple.Entity.PocoEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappedEntity)
+   at NHibernate.Tuple.Entity.EntityEntityModeToTuplizerMapping..ctor(PersistentClass mappedEntity, EntityMetamodel em)
+   at NHibernate.Tuple.Entity.EntityMetamodel..ctor(PersistentClass persistentClass, ISessionFactoryImplementor sessionFactory)
+   at NHibernate.Persister.Entity.AbstractEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory)
+   at NHibernate.Persister.Entity.SingleTableEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping mapping)
+   at NHibernate.Persister.PersisterFactory.CreateClassPersister(PersistentClass model, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping cfg)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at Orchard.Data.SessionFactoryHolder.BuildSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 87
+   at Orchard.Data.SessionFactoryHolder.GetSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 65
+   at Orchard.Data.SessionLocator.For(Type entityType) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionLocator.cs:line 29
+   at Orchard.Data.Repository`1.get_Session() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 26
+   at Orchard.Data.Repository`1.get_Table() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 30
+   at Orchard.Data.Repository`1.Fetch(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 126
+   at Orchard.Data.Repository`1.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 91
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 60
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 57
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 30
+   at Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs:line 66
+   at Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 174
+   at Orchard.Environment.DefaultOrchardHost.CreateAndActivateShells() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 134
+2013-07-11 14:29:08,518 [7] Orchard.Environment.DefaultOrchardHost - A tenant could not be started: Default
+NHibernate.PropertyNotFoundException: Could not find a getter for property 'Image2Source' in class 'MTBSlider.Models.MTBSliderPartRecord'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappingInfo)
+   at NHibernate.Tuple.Entity.PocoEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappedEntity)
+   at NHibernate.Tuple.Entity.EntityEntityModeToTuplizerMapping..ctor(PersistentClass mappedEntity, EntityMetamodel em)
+   at NHibernate.Tuple.Entity.EntityMetamodel..ctor(PersistentClass persistentClass, ISessionFactoryImplementor sessionFactory)
+   at NHibernate.Persister.Entity.AbstractEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory)
+   at NHibernate.Persister.Entity.SingleTableEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping mapping)
+   at NHibernate.Persister.PersisterFactory.CreateClassPersister(PersistentClass model, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping cfg)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at Orchard.Data.SessionFactoryHolder.BuildSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 87
+   at Orchard.Data.SessionFactoryHolder.GetSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 65
+   at Orchard.Data.SessionLocator.For(Type entityType) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionLocator.cs:line 29
+   at Orchard.Data.Repository`1.get_Session() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 26
+   at Orchard.Data.Repository`1.get_Table() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 30
+   at Orchard.Data.Repository`1.Fetch(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 126
+   at Orchard.Data.Repository`1.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 91
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 60
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 57
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 30
+   at Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs:line 66
+   at Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 174
+   at Orchard.Environment.DefaultOrchardHost.CreateAndActivateShells() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 134
+2013-07-11 14:29:13,633 [8] Orchard.Environment.DefaultOrchardHost - A tenant could not be started: Default
+NHibernate.PropertyNotFoundException: Could not find a getter for property 'Image2Source' in class 'MTBSlider.Models.MTBSliderPartRecord'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappingInfo)
+   at NHibernate.Tuple.Entity.PocoEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappedEntity)
+   at NHibernate.Tuple.Entity.EntityEntityModeToTuplizerMapping..ctor(PersistentClass mappedEntity, EntityMetamodel em)
+   at NHibernate.Tuple.Entity.EntityMetamodel..ctor(PersistentClass persistentClass, ISessionFactoryImplementor sessionFactory)
+   at NHibernate.Persister.Entity.AbstractEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory)
+   at NHibernate.Persister.Entity.SingleTableEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping mapping)
+   at NHibernate.Persister.PersisterFactory.CreateClassPersister(PersistentClass model, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping cfg)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at Orchard.Data.SessionFactoryHolder.BuildSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 87
+   at Orchard.Data.SessionFactoryHolder.GetSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 65
+   at Orchard.Data.SessionLocator.For(Type entityType) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionLocator.cs:line 29
+   at Orchard.Data.Repository`1.get_Session() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 26
+   at Orchard.Data.Repository`1.get_Table() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 30
+   at Orchard.Data.Repository`1.Fetch(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 126
+   at Orchard.Data.Repository`1.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 91
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 60
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 57
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 30
+   at Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs:line 66
+   at Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 174
+   at Orchard.Environment.DefaultOrchardHost.CreateAndActivateShells() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 134
+2013-07-11 14:29:43,572 [6] Orchard.Environment.DefaultOrchardHost - A tenant could not be started: Default
+NHibernate.PropertyNotFoundException: Could not find a getter for property 'Image2Source' in class 'MTBSlider.Models.MTBSliderPartRecord'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappingInfo)
+   at NHibernate.Tuple.Entity.PocoEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappedEntity)
+   at NHibernate.Tuple.Entity.EntityEntityModeToTuplizerMapping..ctor(PersistentClass mappedEntity, EntityMetamodel em)
+   at NHibernate.Tuple.Entity.EntityMetamodel..ctor(PersistentClass persistentClass, ISessionFactoryImplementor sessionFactory)
+   at NHibernate.Persister.Entity.AbstractEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory)
+   at NHibernate.Persister.Entity.SingleTableEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping mapping)
+   at NHibernate.Persister.PersisterFactory.CreateClassPersister(PersistentClass model, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping cfg)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at Orchard.Data.SessionFactoryHolder.BuildSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 87
+   at Orchard.Data.SessionFactoryHolder.GetSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 65
+   at Orchard.Data.SessionLocator.For(Type entityType) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionLocator.cs:line 29
+   at Orchard.Data.Repository`1.get_Session() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 26
+   at Orchard.Data.Repository`1.get_Table() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 30
+   at Orchard.Data.Repository`1.Fetch(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 126
+   at Orchard.Data.Repository`1.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 91
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 60
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 57
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 30
+   at Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs:line 66
+   at Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 174
+   at Orchard.Environment.DefaultOrchardHost.CreateAndActivateShells() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 134
+2013-07-11 14:31:06,317 [6] Orchard.Environment.DefaultOrchardHost - A tenant could not be started: Default
+NHibernate.PropertyNotFoundException: Could not find a getter for property 'Image2Source' in class 'MTBSlider.Models.MTBSliderPartRecord'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappingInfo)
+   at NHibernate.Tuple.Entity.PocoEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappedEntity)
+   at NHibernate.Tuple.Entity.EntityEntityModeToTuplizerMapping..ctor(PersistentClass mappedEntity, EntityMetamodel em)
+   at NHibernate.Tuple.Entity.EntityMetamodel..ctor(PersistentClass persistentClass, ISessionFactoryImplementor sessionFactory)
+   at NHibernate.Persister.Entity.AbstractEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory)
+   at NHibernate.Persister.Entity.SingleTableEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping mapping)
+   at NHibernate.Persister.PersisterFactory.CreateClassPersister(PersistentClass model, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping cfg)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at Orchard.Data.SessionFactoryHolder.BuildSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 87
+   at Orchard.Data.SessionFactoryHolder.GetSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 65
+   at Orchard.Data.SessionLocator.For(Type entityType) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionLocator.cs:line 29
+   at Orchard.Data.Repository`1.get_Session() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 26
+   at Orchard.Data.Repository`1.get_Table() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 30
+   at Orchard.Data.Repository`1.Fetch(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 126
+   at Orchard.Data.Repository`1.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 91
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 60
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 57
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 30
+   at Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs:line 66
+   at Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 174
+   at Orchard.Environment.DefaultOrchardHost.CreateAndActivateShells() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 134
+2013-07-11 14:31:09,385 [7] Orchard.Environment.DefaultOrchardHost - A tenant could not be started: Default
+NHibernate.PropertyNotFoundException: Could not find a getter for property 'Image2Source' in class 'MTBSlider.Models.MTBSliderPartRecord'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappingInfo)
+   at NHibernate.Tuple.Entity.PocoEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappedEntity)
+   at NHibernate.Tuple.Entity.EntityEntityModeToTuplizerMapping..ctor(PersistentClass mappedEntity, EntityMetamodel em)
+   at NHibernate.Tuple.Entity.EntityMetamodel..ctor(PersistentClass persistentClass, ISessionFactoryImplementor sessionFactory)
+   at NHibernate.Persister.Entity.AbstractEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory)
+   at NHibernate.Persister.Entity.SingleTableEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping mapping)
+   at NHibernate.Persister.PersisterFactory.CreateClassPersister(PersistentClass model, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping cfg)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at Orchard.Data.SessionFactoryHolder.BuildSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 87
+   at Orchard.Data.SessionFactoryHolder.GetSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 65
+   at Orchard.Data.SessionLocator.For(Type entityType) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionLocator.cs:line 29
+   at Orchard.Data.Repository`1.get_Session() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 26
+   at Orchard.Data.Repository`1.get_Table() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 30
+   at Orchard.Data.Repository`1.Fetch(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 126
+   at Orchard.Data.Repository`1.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 91
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 60
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 57
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 30
+   at Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs:line 66
+   at Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 174
+   at Orchard.Environment.DefaultOrchardHost.CreateAndActivateShells() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 134
+2013-07-11 14:31:29,399 [6] Orchard.Environment.DefaultOrchardHost - A tenant could not be started: Default
+NHibernate.PropertyNotFoundException: Could not find a getter for property 'Image2Source' in class 'MTBSlider.Models.MTBSliderPartRecord'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappingInfo)
+   at NHibernate.Tuple.Entity.PocoEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappedEntity)
+   at NHibernate.Tuple.Entity.EntityEntityModeToTuplizerMapping..ctor(PersistentClass mappedEntity, EntityMetamodel em)
+   at NHibernate.Tuple.Entity.EntityMetamodel..ctor(PersistentClass persistentClass, ISessionFactoryImplementor sessionFactory)
+   at NHibernate.Persister.Entity.AbstractEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory)
+   at NHibernate.Persister.Entity.SingleTableEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping mapping)
+   at NHibernate.Persister.PersisterFactory.CreateClassPersister(PersistentClass model, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping cfg)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at Orchard.Data.SessionFactoryHolder.BuildSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 87
+   at Orchard.Data.SessionFactoryHolder.GetSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 65
+   at Orchard.Data.SessionLocator.For(Type entityType) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionLocator.cs:line 29
+   at Orchard.Data.Repository`1.get_Session() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 26
+   at Orchard.Data.Repository`1.get_Table() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 30
+   at Orchard.Data.Repository`1.Fetch(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 126
+   at Orchard.Data.Repository`1.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 91
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 60
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 57
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 30
+   at Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs:line 66
+   at Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 174
+   at Orchard.Environment.DefaultOrchardHost.CreateAndActivateShells() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 134
+2013-07-11 14:31:36,182 [6] Orchard.Environment.DefaultOrchardHost - A tenant could not be started: Default
+NHibernate.PropertyNotFoundException: Could not find a getter for property 'Image2Source' in class 'MTBSlider.Models.MTBSliderPartRecord'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappingInfo)
+   at NHibernate.Tuple.Entity.PocoEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappedEntity)
+   at NHibernate.Tuple.Entity.EntityEntityModeToTuplizerMapping..ctor(PersistentClass mappedEntity, EntityMetamodel em)
+   at NHibernate.Tuple.Entity.EntityMetamodel..ctor(PersistentClass persistentClass, ISessionFactoryImplementor sessionFactory)
+   at NHibernate.Persister.Entity.AbstractEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory)
+   at NHibernate.Persister.Entity.SingleTableEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping mapping)
+   at NHibernate.Persister.PersisterFactory.CreateClassPersister(PersistentClass model, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping cfg)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at Orchard.Data.SessionFactoryHolder.BuildSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 87
+   at Orchard.Data.SessionFactoryHolder.GetSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 65
+   at Orchard.Data.SessionLocator.For(Type entityType) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionLocator.cs:line 29
+   at Orchard.Data.Repository`1.get_Session() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 26
+   at Orchard.Data.Repository`1.get_Table() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 30
+   at Orchard.Data.Repository`1.Fetch(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 126
+   at Orchard.Data.Repository`1.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 91
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 60
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 57
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 30
+   at Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs:line 66
+   at Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 174
+   at Orchard.Environment.DefaultOrchardHost.CreateAndActivateShells() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 134
+2013-07-11 14:34:09,880 [7] Orchard.Environment.DefaultOrchardHost - A tenant could not be started: Default
+NHibernate.PropertyNotFoundException: Could not find a getter for property 'Image2Source' in class 'MTBSlider.Models.MTBSliderPartRecord'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Tuple.Entity.AbstractEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappingInfo)
+   at NHibernate.Tuple.Entity.PocoEntityTuplizer..ctor(EntityMetamodel entityMetamodel, PersistentClass mappedEntity)
+   at NHibernate.Tuple.Entity.EntityEntityModeToTuplizerMapping..ctor(PersistentClass mappedEntity, EntityMetamodel em)
+   at NHibernate.Tuple.Entity.EntityMetamodel..ctor(PersistentClass persistentClass, ISessionFactoryImplementor sessionFactory)
+   at NHibernate.Persister.Entity.AbstractEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory)
+   at NHibernate.Persister.Entity.SingleTableEntityPersister..ctor(PersistentClass persistentClass, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping mapping)
+   at NHibernate.Persister.PersisterFactory.CreateClassPersister(PersistentClass model, ICacheConcurrencyStrategy cache, ISessionFactoryImplementor factory, IMapping cfg)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at Orchard.Data.SessionFactoryHolder.BuildSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 87
+   at Orchard.Data.SessionFactoryHolder.GetSessionFactory() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionFactoryHolder.cs:line 65
+   at Orchard.Data.SessionLocator.For(Type entityType) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\SessionLocator.cs:line 29
+   at Orchard.Data.Repository`1.get_Session() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 26
+   at Orchard.Data.Repository`1.get_Table() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 30
+   at Orchard.Data.Repository`1.Fetch(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 126
+   at Orchard.Data.Repository`1.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 91
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Data\Repository.cs:line 60
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 57
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 30
+   at Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs:line 66
+   at Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 174
+   at Orchard.Environment.DefaultOrchardHost.CreateAndActivateShells() in c:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard\Environment\DefaultOrchardHost.cs:line 134

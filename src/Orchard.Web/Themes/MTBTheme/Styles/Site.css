@@ -1,0 +1,36 @@
+﻿/*
+Theme: MTB Theme
+Author: I Causton Ltd
+*/
+
+/* Orchard specific resets - Clearing Floats
+***************************************************************/
+
+.group:after 
+{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.zone:after, .widget-control:after /* .zone:after self clears every zone container - .widget-control:after self clears any floats used in a widget */
+{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/* General
+***************************************************************/
+
+body{ font:16px/26px Helvetica, Helvetica Neue, Arial; }
+
+
+.wrapper{
+		width:913px; /* 1140px - 10% for margins */
+	margin:0 auto;
+}

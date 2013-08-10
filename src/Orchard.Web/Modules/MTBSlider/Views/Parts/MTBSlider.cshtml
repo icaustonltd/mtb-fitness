@@ -1,0 +1,54 @@
+﻿@model MTBSlider.Models.MTBSliderPart
+
+<div class="slider-wrapper theme-default">
+    <div id="slider" class="nivoSlider" style="background: url('') no-repeat scroll 0 0 transparent; height: 380px; position: relative;">
+        <a href="#"><img src="@Model.Item1ImageUrl" title="#banner1" alt="" /></a>
+        <a href="#"><img src="@Model.Item2ImageUrl" title="#banner2" alt="" /></a>
+        <a href="#"><img src="@Model.Item3ImageUrl" title="#banner3" alt="" /></a>
+        <a href="#"><img src="@Model.Item4ImageUrl" title="#banner4" alt="" /></a>
+    </div>
+    <!-- Banner Caption Start -->
+    <div id="banner1" class="nivo-html-caption">
+        <h1 class="title backcolor">@Model.Item1Title</h1>
+        <div class="clear"></div>
+        <div class="banner-text">
+            <p>
+                @Model.Item1Text
+            </p>
+        </div>
+    </div>
+    <!-- Banner Caption End -->
+    <!-- Banner Caption Start -->
+    <div id="banner2" class="nivo-html-caption">
+        <h1 class="title backcolor">@Model.Item2Title</h1>
+        <div class="clear"></div>
+        <div class="banner-text">
+            <p>
+                @Model.Item2Text
+            </p>
+        </div>
+    </div>
+    <!-- Banner Caption End -->
+    <!-- Banner Caption Start -->
+    <div id="banner3" class="nivo-html-caption">
+        <h1 class="title backcolor">@Model.Item3Title</h1>
+        <div class="clear"></div>
+        <div class="banner-text">
+            <p>
+                @Model.Item3Text
+            </p>
+        </div>
+    </div>
+    <!-- Banner Caption End -->
+        <!-- Banner Caption Start -->
+    <div id="banner4" class="nivo-html-caption">
+        <h1 class="title backcolor">@Model.Item4Title</h1>
+        <div class="clear"></div>
+        <div class="banner-text">
+            <p>
+                @Model.Item4Text
+            </p>
+        </div>
+    </div>
+    <!-- Banner Caption End -->
+</div>

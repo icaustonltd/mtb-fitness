@@ -1,0 +1,164 @@
+﻿* =============================================================================
+   Media Queries - iPhone
+   ========================================================================== */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) {
+	#header-container header {
+		height:145px;
+	}
+	#login-form form input {
+		display:block;
+		height: 20px;
+ 	    margin: 10px;
+	}
+	#social-links {
+		right: 20px;
+  		top: -50px;
+	}
+	.nivo-caption .banner-text {
+		width:256px;
+	}
+	.nivo-directionNav
+	{
+		left:356px;
+	}
+	/* Services Page
+	 * ==============================
+	 */
+	.services-gold,.services-bronze,.services-silver
+	{
+	    display:none;
+	}
+	.services-gold-content
+	{
+	    width: 265px;
+        padding: 5px;
+        padding-bottom:30px;
+	}
+	.services-price
+	{
+	    width: 100px;
+	}
+	.services-gold-content-title
+	{
+	    margin-top:20px;
+	}
+	.services-gold-left,.services-gold-content,.services-gold-right
+	{
+	    background:none;  
+	    height:auto; 
+	}
+	.services-gold-content
+	{
+	    border: solid 20px #9d9fa2;
+        float: none;
+        width: 270px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+	}
+	.services-box-left1
+	{
+	    -webkit-border-top-left-radius: 5px;
+        -webkit-border-bottom-left-radius: 5px;
+        -moz-border-radius-topleft: 5px;
+        -moz-border-radius-bottomleft: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        
+	}
+	.services-box-left1,.services-box-right1,.services-box-center2
+	{
+	    background:#000;
+	    padding-bottom:20px;
+	}
+	.services-box-right1,.services-box-center2
+	{
+	    width:300px;
+	}
+	.services-box-container1, .services-box-container2
+	{
+	    width:334px;
+	}
+	.services-box-right2
+	{
+	    padding-bottom:20px;
+	    background:#000;
+	    -webkit-border-top-right-radius: 5px;
+        -webkit-border-bottom-right-radius: 5px;
+        -moz-border-radius-topright: 5px;
+        -moz-border-radius-bottomright: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+	}
+	/* Qualifications Page
+	 * =========================================
+	 */
+	.qualifications-box-container1,.qualifications-box-container2
+	{
+	    width:auto;
+	    min-width:0;
+	}
+	.qualifications-box-right1,.qualifications-box-center2
+	{
+	    width:180px;
+	}
+	/* Testimonials Page
+	===================================*/
+	.testimonials-box-left2,.testimonials-box-left1
+	{
+		display:none;
+	}
+	/* Standard 3 Page
+	===================================*/
+	.standard3-box
+	{
+		margin:30px 0 0 2px;
+	}
+	.standard3-right > ul > li
+	{
+		margin-left:2px;
+		margin-right:0;
+	}
+	/* Standard 2
+	===================================*/
+	.standard2-left-column
+	{
+		float:none;
+		margin:0;
+		padding:0;
+		width:100%;
+	}
+	.standard2-right > ul > li
+	{
+		margin:5px auto;
+	}
+	
+	/* Exercise Page
+	 * =================================
+	 */
+	.exercise-right
+    {
+        width: 200px;
+    }
+    .exercise-strength-training
+    {
+        margin: 0;
+        position: relative;
+        top: 300px;
+        left: -250px;
+        margin-top: 20px;
+    }
+    .exercise-table
+    {
+        position: relative;
+        top: 300px;
+        margin-bottom: 300px;
+        left: -250px;
+        width: 470px;
+    }
+    .exercise-left
+    {
+        margin-left:10px;
+    }

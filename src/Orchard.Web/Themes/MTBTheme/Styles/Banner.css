@@ -1,0 +1,193 @@
+﻿.clearfix:before, .clearfix:after, .row:before, .row:after {
+    content: " ";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+}
+.row:after, .clearfix:after {
+    clear: both;
+}
+.row, .clearfix {
+}
+#banner {
+	background: #8c0305; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzhjMDMwNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZDFjMjQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #8c0305 0%, #ed1c24 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8c0305), color-stop(100%,#ed1c24)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #8c0305 0%,#ed1c24 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #8c0305 0%,#ed1c24 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #8c0305 0%,#ed1c24 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #8c0305 0%,#ed1c24 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c0305', endColorstr='#ed1c24',GradientType=0 ); /* IE6-8 */
+
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    width: 97.7%;
+    z-index: 1;
+}
+.nivoSlider {
+	position:relative;
+	width:100%;
+	overflow:hidden;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:250px;
+	margin:0px auto;
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+}
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	color:#fff;
+	z-index:9985;
+	bottom:36px;
+	left:30px;
+	opacity:1 !important;
+}
+.nivo-caption p{
+	opacity:1 !important;
+}
+.nivo-caption h1.title{
+	padding:10px;
+	font-size:24px;
+	float:left;
+}
+.nivo-caption .banner-text{
+	float:left;
+	width:356px;
+	height:80px;
+	padding:10px 80px 10px 15px;
+	background:#231f20;
+	-webkit-border-radius: 16px;
+	-webkit-border-top-left-radius: 0;
+	-moz-border-radius: 16px;
+	-moz-border-radius-topleft: 0;
+	border-radius: 16px;
+	border-top-left-radius: 0;
+}
+.nivo-caption .banner-text p{
+	line-height:20px;
+	font-size:17px;
+	font-style: italic;
+	font-weight:bold;
+	margin-top:0;
+}
+.nivo-html-caption {
+	display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav {
+	bottom: 55px;
+    display: inline-block !important;
+    height: 61px;
+    left: 454px;
+    position: absolute;
+    width: 103px;
+    z-index: 9990;
+}
+.nivo-directionNav a {
+	z-index:9;
+	cursor:pointer;
+	text-indent:-9999px;
+}
+.nivo-prevNav {
+	background: url("../img/banner-arrows.png") no-repeat scroll 0 0 transparent;
+    display: inline-block !important;
+    float: left;
+    height: 59px;
+    width: 51px;
+}
+
+.nivo-nextNav {
+	background: url("../img/banner-arrows.png") no-repeat scroll -51px 0 transparent;
+    display: inline-block !important;
+    float: right;
+    height: 59px;
+    width: 52px;
+}
+
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav a {
+	position:relative;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}
+/* cosmetics */
+.theme-default .nivoSlider {
+	position:relative;
+	background:#fff url(../img/ajax-loader.gif) no-repeat 50% 50%;
+}
+.theme-default .nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+.theme-default .nivoSlider a {
+	display:block;
+}
+.nivo-controlNav {
+	left:49%;
+	padding:5px 10px;
+	position:absolute;
+	border-radius:20px;
+	bottom:20px;
+	z-index:9990;
+	box-shadow:0px 0px 2px #000;
+	display:none;
+}
+.backcolor {
+	background: #900507; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzkwMDUwNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZDFjMjQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(left,  #900507 0%, #ed1c24 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#900507), color-stop(100%,#ed1c24)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #900507 0%,#ed1c24 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #900507 0%,#ed1c24 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #900507 0%,#ed1c24 100%); /* IE10+ */
+	background: linear-gradient(to right,  #900507 0%,#ed1c24 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#900507', endColorstr='#ed1c24',GradientType=1 ); /* IE6-8 */
+	-webkit-border-top-left-radius: 12px;
+	-webkit-border-top-right-radius: 12px;
+	-moz-border-radius-topleft: 12px;
+	-moz-border-radius-topright: 12px;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	margin:0;
+	font-style:italic;
+}

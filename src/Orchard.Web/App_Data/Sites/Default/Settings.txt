@@ -1,0 +1,12 @@
+Name: Default
+DataProvider: SqlServer
+DataConnectionString: Data Source=WIN-PDSPK9476F4;Initial Catalog=MTBFitnessOrchardCMS.Dev;Persist Security Info=True;User ID=sa;Password=cream8MaxC!9
+DataPrefix: null
+RequestUrlHost: null
+RequestUrlPrefix: null
+State: Running
+EncryptionAlgorithm: AES
+EncryptionKey: 787CCB7031BE7B540B001D49BCDBF8B337ED5E074566B31917CD4916FCA75F72
+HashAlgorithm: HMACSHA256
+HashKey: 16E6525F7DA7784F0A326EA3B132A7E1CF1E65437FF8600BC1DA3AA3700009CD13A57CCEA33FD87646B01D7A27F786582FEFE059A84351D3E632F76F60E9EE50
+Themes: 

@@ -1,0 +1,7 @@
+Name: Urban Yellow Two
+Author: continuum - rich media lab
+Website: http://www.continuum.tv
+Description: The Urban theme with its street art background in combination with the lively colors is anything but reserved and perfect for topics like youth, lifestyle, music, and many more.
+(Deutsch: Das Urban Theme ist mit seinem street art Hintergrund, in Kombination mit den kräftigen Farben, alles andere als zurückhaltend und ist perfekt für Bereiche wie Jugend, Lebensstil, Musik und viele andere.)
+Version: 1.0                    
+Tags: cms, street art, design, graffiti, urban, star, chucks, dirt, youth, lifestyle, music, skate, nightlife, yellow

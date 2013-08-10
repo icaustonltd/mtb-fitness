@@ -1,0 +1,77 @@
+﻿/* =============================================================================
+    Start : Selectors 
+   ============================================================================= */
+
+nav{
+	float:left;
+	width:100%;
+}
+
+nav ul li a{
+	color: #9D9FA2;
+    display: block;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+	color:#231f20;
+	text-decoration:none;
+}
+
+nav a:visited {
+	color:#9d9fa2;
+}
+
+nav a{
+	float:left;
+	margin-bottom:0;
+}
+	
+nav > ul > li:first-child a{ margin-left:0; }
+nav > ul > li:last-child  a{ margin-right:0; }
+
+/* =============================================================================
+    Start : Classes 
+   ============================================================================= */
+
+.subnav {
+	position:absolute;
+	z-index:10000;
+	display:none;
+}
+.subnav > li > a {
+	float:none;
+	text-align:left!important;
+	margin-bottom:0px!important;
+	background:#FFFFFF;
+	border-bottom:1px dotted #cacaca;
+	padding:0 5px 0 5px;
+}
+
+.top ul li a{
+	color: #9D9FA2;
+    display: block;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.top ul li a:hover{
+	color:#231f20;
+	text-decoration:none;
+}
+.top a:visited {
+	color:#9d9fa2;
+}
+
+/* =============================================================================
+    Start : Id's 
+   ============================================================================= */

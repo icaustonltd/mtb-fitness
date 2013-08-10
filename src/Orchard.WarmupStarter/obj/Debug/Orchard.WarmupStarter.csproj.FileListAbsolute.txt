@@ -1,0 +1,4 @@
+C:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.WarmupStarter\bin\Debug\Orchard.WarmupStarter.dll
+C:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.WarmupStarter\bin\Debug\Orchard.WarmupStarter.pdb
+C:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.WarmupStarter\obj\Debug\Orchard.WarmupStarter.dll
+C:\Dev\OrchardCMS\dev.mtbfitness.co.uk\src\Orchard.WarmupStarter\obj\Debug\Orchard.WarmupStarter.pdb

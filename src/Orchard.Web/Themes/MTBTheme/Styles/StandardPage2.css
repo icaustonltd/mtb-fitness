@@ -1,0 +1,55 @@
+﻿.standard2-container
+{
+	margin-top:15px;
+	margin-left:35px;
+	font-size:22px;
+	font-style:italic;
+	margin-bottom:50px;
+}
+.standard2-left
+{
+	float:left;
+	width:70%;
+}
+.standard2-right
+{
+	float:left;
+	width:30%;
+}
+.standard2-left-column
+{
+	width:45%;
+	float:left;
+	margin-left:45px;
+}
+.standard2-left-column:first-child
+{
+	margin-left:0;
+}
+.standard2-right > ul
+{
+	list-style-type: none;
+	margin-top:30px;
+}
+.standard2-right > ul > li
+{
+	height:54px;
+	line-height:54px;
+	margin-top:15px;
+	color:#fff;
+	text-align:center;
+}
+.li-left
+{
+	background:url('../img/standard2-left.png') repeat-x;
+	height:54px;
+	width:210px;
+	float:left;
+}
+.li-right
+{
+	background:url('../img/standard2-right.png') no-repeat;
+	float:left;
+	width:7px;
+	height:54px;
+}

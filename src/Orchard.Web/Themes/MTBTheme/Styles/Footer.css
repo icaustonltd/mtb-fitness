@@ -1,0 +1,37 @@
+﻿#footer-container{ 
+	background-color: #231F20; 
+	margin-top:25px;
+}
+
+#footer-container footer{
+	color:white;
+	padding:20px 0;
+	height: 110px;
+}
+
+#footer-container footer {
+		height:230px;
+}
+
+.bottom {
+	
+}
+
+.bottom ul li a{
+	color: #fff;
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    
+    text-align: center;
+    text-decoration: none;
+}
+
+.bottom ul li a:hover{
+	color:#9d9fa2;
+	text-decoration:none;
+}
+.bottom a:visited {
+	color:#fff;
+}

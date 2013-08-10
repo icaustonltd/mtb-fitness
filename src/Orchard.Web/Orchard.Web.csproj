@@ -1,0 +1,665 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{50B779EA-EC00-4699-84C0-03B395C365D2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Orchard.Web</RootNamespace>
+    <AssemblyName>Orchard.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkProfile />
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\OrchardBasicCorrectness.ruleset</CodeAnalysisRuleSet>
+    <FilesToIncludeForPublish>AllFilesInProjectFolder</FilesToIncludeForPublish>
+    <PackageAsSingleFile>false</PackageAsSingleFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac, Version=2.6.3.862, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\autofac\Autofac.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\aspnetmvc\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\lib\newtonsoft.json\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.5.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\mysql\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NuGet.Core, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\nuget\NuGet.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\sqlce\System.Data.SqlServerCe.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\aspnetmvc\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\aspnetmvc\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\aspnetmvc\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\aspnetmvc\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\aspnetmvc\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\aspnetmvc\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Content Include="Config\log4net.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Config\Sample.HostComponents.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Media\MTB\img\ajax-loader.gif" />
+    <Content Include="Media\MTB\img\banner-arrows.png" />
+    <Content Include="Media\MTB\img\black-arrow.png" />
+    <Content Include="Media\MTB\img\blank.gif" />
+    <Content Include="Media\MTB\img\box1.png" />
+    <Content Include="Media\MTB\img\box2.png" />
+    <Content Include="Media\MTB\img\box3.png" />
+    <Content Include="Media\MTB\img\bronze.png" />
+    <Content Include="Media\MTB\img\caption.png" />
+    <Content Include="Media\MTB\img\Carousel\carousel01.jpg" />
+    <Content Include="Media\MTB\img\Carousel\carousel02.jpg" />
+    <Content Include="Media\MTB\img\Carousel\carousel03.jpg" />
+    <Content Include="Media\MTB\img\Carousel\carousel04.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0001.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0025.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0033.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0038.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0043.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0046.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0048.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0070.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0078.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0083.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0088.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0097.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0108.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0111.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0124.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0126.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0133.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0136.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0157.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0159.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0161.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0165.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0168.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0178.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0179.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0185.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0188.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0204.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0206.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0207.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0224.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0227.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0231.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0233.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0236.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0242.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0244.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0246.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0249.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0264.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0273.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0274.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0276.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0280.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0287.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0288.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0292.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0301.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0313.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0323.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0327.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0338.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0346.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0366.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0369.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0371.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0372.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0376.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0378.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0382.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0390.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0394.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0407.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0416.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0456.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0459.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0462.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0464.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0468.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0471.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0480.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0481.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0493.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0494.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0496.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0498.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0499.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0504.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0508.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0521.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0522.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0525.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0528.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0545.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0549.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0551.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0552.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0558.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0565.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0581.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0582.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0583.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0586.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0587.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0589.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0590.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0598.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0599.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0610.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0611.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0613.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0618.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0624.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0629.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0631.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0636.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0638.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0645.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0646.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0648.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0651.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0652.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0656.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0659.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0662.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0663.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0672.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0673.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0675.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0679.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0684.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0685.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0686.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0698.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0700.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0707.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0709.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0711.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0714.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0718.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0719.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0724.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0727.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0736.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0739.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0759.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0761.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0766.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0767.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0772.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0776.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0782.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0785.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0792.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0795.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0799.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0802.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0805.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0807.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0809.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0814.jpg" />
+    <Content Include="Media\MTB\img\Carousel\MTB2012PhotoShoot\_MG_0815.jpg" />
+    <Content Include="Media\MTB\img\contact-map.gif" />
+    <Content Include="Media\MTB\img\exercise-header-img.png" />
+    <Content Include="Media\MTB\img\exercise-left-bottom-f.png" />
+    <Content Include="Media\MTB\img\exercise-left-bottom.png" />
+    <Content Include="Media\MTB\img\exercise-left-top-f.png" />
+    <Content Include="Media\MTB\img\exercise-left-top.png" />
+    <Content Include="Media\MTB\img\facebook-icon.png" />
+    <Content Include="Media\MTB\img\facebook.png" />
+    <Content Include="Media\MTB\img\fancybox_loading.gif" />
+    <Content Include="Media\MTB\img\fancybox_overlay.png" />
+    <Content Include="Media\MTB\img\fancybox_sprite.png" />
+    <Content Include="Media\MTB\img\find-out-more.png" />
+    <Content Include="Media\MTB\img\gold-center.png" />
+    <Content Include="Media\MTB\img\gold-left.png" />
+    <Content Include="Media\MTB\img\gold-right.png" />
+    <Content Include="Media\MTB\img\gold.png" />
+    <Content Include="Media\MTB\img\hero-001.jpg" />
+    <Content Include="Media\MTB\img\hero-002.jpg" />
+    <Content Include="Media\MTB\img\hero-003.jpg" />
+    <Content Include="Media\MTB\img\hero-004.jpg" />
+    <Content Include="Media\MTB\img\hero-005.jpg" />
+    <Content Include="Media\MTB\img\linkedin-icon.png" />
+    <Content Include="Media\MTB\img\logo.png" />
+    <Content Include="Media\MTB\img\mobileBanner.jpg" />
+    <Content Include="Media\MTB\img\quote-end.png" />
+    <Content Include="Media\MTB\img\quote-start.png" />
+    <Content Include="Media\MTB\img\see-video.png" />
+    <Content Include="Media\MTB\img\services-box-content.png" />
+    <Content Include="Media\MTB\img\services-box-left.png" />
+    <Content Include="Media\MTB\img\services-box-right.png" />
+    <Content Include="Media\MTB\img\services-left.png" />
+    <Content Include="Media\MTB\img\services-logo1.png" />
+    <Content Include="Media\MTB\img\services-logo2.png" />
+    <Content Include="Media\MTB\img\silver.png" />
+    <Content Include="Media\MTB\img\standard2-left.png" />
+    <Content Include="Media\MTB\img\standard2-right.png" />
+    <Content Include="Media\MTB\img\static-tab.png" />
+    <Content Include="Media\MTB\img\static-text.png" />
+    <Content Include="Media\MTB\img\subscribe.png" />
+    <Content Include="Media\MTB\img\testimonials-box-left.png" />
+    <Content Include="Media\MTB\img\testimonials-box-left2.png" />
+    <Content Include="Media\MTB\img\testimonials-box-right.png" />
+    <Content Include="Media\MTB\img\testimonials-box-right2.png" />
+    <Content Include="Media\MTB\img\toystory.jpg" />
+    <Content Include="Media\MTB\img\twitter-icon.png" />
+    <Content Include="Media\MTB\img\twitter.png" />
+    <Content Include="Media\MTB\img\up.jpg" />
+    <Content Include="Media\MTB\img\walle.jpg" />
+    <Content Include="Media\MTB\img\youtube.png" />
+    <Content Include="Media\web.config" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="Themes\MTBTheme\Styles\Footer.css" />
+    <Content Include="_html\border-radius.htc" />
+    <Content Include="_html\contact.html" />
+    <Content Include="_html\css\jquery.fancybox.css" />
+    <Content Include="_html\css\nivo-slider.css" />
+    <Content Include="_html\css\style.css" />
+    <Content Include="_html\exercise-female.html" />
+    <Content Include="_html\exercise-male.html" />
+    <Content Include="_html\favicon.ico" />
+    <Content Include="_html\img\ajax-loader.gif" />
+    <Content Include="_html\img\banner-arrows.png" />
+    <Content Include="_html\img\black-arrow.png" />
+    <Content Include="_html\img\blank.gif" />
+    <Content Include="_html\img\box1.png" />
+    <Content Include="_html\img\box2.png" />
+    <Content Include="_html\img\box3.png" />
+    <Content Include="_html\img\bronze.png" />
+    <Content Include="_html\img\caption.png" />
+    <Content Include="_html\img\Carousel\carousel01.jpg" />
+    <Content Include="_html\img\Carousel\carousel02.jpg" />
+    <Content Include="_html\img\Carousel\carousel03.jpg" />
+    <Content Include="_html\img\Carousel\carousel04.jpg" />
+    <Content Include="_html\img\contact-map.gif" />
+    <Content Include="_html\img\exercise-header-img.png" />
+    <Content Include="_html\img\exercise-left-bottom-f.png" />
+    <Content Include="_html\img\exercise-left-bottom.png" />
+    <Content Include="_html\img\exercise-left-top-f.png" />
+    <Content Include="_html\img\exercise-left-top.png" />
+    <Content Include="_html\img\facebook-icon.png" />
+    <Content Include="_html\img\facebook.png" />
+    <Content Include="_html\img\fancybox_loading.gif" />
+    <Content Include="_html\img\fancybox_overlay.png" />
+    <Content Include="_html\img\fancybox_sprite.png" />
+    <Content Include="_html\img\find-out-more.png" />
+    <Content Include="_html\img\gold-center.png" />
+    <Content Include="_html\img\gold-left.png" />
+    <Content Include="_html\img\gold-right.png" />
+    <Content Include="_html\img\gold.png" />
+    <Content Include="_html\img\hero-001.jpg" />
+    <Content Include="_html\img\hero-002.jpg" />
+    <Content Include="_html\img\hero-003.jpg" />
+    <Content Include="_html\img\hero-004.jpg" />
+    <Content Include="_html\img\hero-005.jpg" />
+    <Content Include="_html\img\linkedin-icon.png" />
+    <Content Include="_html\img\logo.png" />
+    <Content Include="_html\img\quote-end.png" />
+    <Content Include="_html\img\quote-start.png" />
+    <Content Include="_html\img\see-video.png" />
+    <Content Include="_html\img\services-box-content.png" />
+    <Content Include="_html\img\services-box-left.png" />
+    <Content Include="_html\img\services-box-right.png" />
+    <Content Include="_html\img\services-left.png" />
+    <Content Include="_html\img\services-logo1.png" />
+    <Content Include="_html\img\services-logo2.png" />
+    <Content Include="_html\img\silver.png" />
+    <Content Include="_html\img\standard2-left.png" />
+    <Content Include="_html\img\standard2-right.png" />
+    <Content Include="_html\img\static-tab.png" />
+    <Content Include="_html\img\static-text.png" />
+    <Content Include="_html\img\subscribe.png" />
+    <Content Include="_html\img\testimonials-box-left.png" />
+    <Content Include="_html\img\testimonials-box-left2.png" />
+    <Content Include="_html\img\testimonials-box-right.png" />
+    <Content Include="_html\img\testimonials-box-right2.png" />
+    <Content Include="_html\img\twitter-icon.png" />
+    <Content Include="_html\img\twitter.png" />
+    <Content Include="_html\img\youtube.png" />
+    <Content Include="_html\index.html" />
+    <Content Include="_html\indexv2.html" />
+    <Content Include="_html\js\helpers\fancybox_buttons.png" />
+    <Content Include="_html\js\helpers\jquery.fancybox-buttons.css" />
+    <Content Include="_html\js\helpers\jquery.fancybox-buttons.js" />
+    <Content Include="_html\js\helpers\jquery.fancybox-media.js" />
+    <Content Include="_html\js\helpers\jquery.fancybox-thumbs.css" />
+    <Content Include="_html\js\helpers\jquery.fancybox-thumbs.js" />
+    <Content Include="_html\js\jquery.fancybox.js" />
+    <Content Include="_html\js\jquery.fancybox.pack.js" />
+    <Content Include="_html\js\libs\html5-3.4-respond-1.1.0.min.js" />
+    <Content Include="_html\js\libs\jquery-1.7.2.min.js" />
+    <Content Include="_html\js\libs\jquery.nivo.slider.js" />
+    <Content Include="_html\js\plugins.js" />
+    <Content Include="_html\js\script.js" />
+    <Content Include="_html\qualifications.html" />
+    <Content Include="_html\services.html" />
+    <Content Include="_html\sitemap.xml" />
+    <Content Include="_html\standard_page_1.html" />
+    <Content Include="_html\standard_page_2.html" />
+    <Content Include="_html\standard_page_3.html" />
+    <Content Include="_html\testimonials.html" />
+    <Content Include="_html\tumblr.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Media\OrchardLogo.png" />
+    <Content Include="Refresh.html" />
+    <Content Include="Themes\MTBTheme\Content\Images\ajax-loader.gif" />
+    <Content Include="Themes\MTBTheme\Content\Images\banner-arrows.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\black-arrow.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\blank.gif" />
+    <Content Include="Themes\MTBTheme\Content\Images\box1.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\box2.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\box3.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\bronze.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\caption.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\Carousel\carousel01.jpg" />
+    <Content Include="Themes\MTBTheme\Content\Images\Carousel\carousel02.jpg" />
+    <Content Include="Themes\MTBTheme\Content\Images\Carousel\carousel03.jpg" />
+    <Content Include="Themes\MTBTheme\Content\Images\Carousel\carousel04.jpg" />
+    <Content Include="Themes\MTBTheme\Content\Images\contact-map.gif" />
+    <Content Include="Themes\MTBTheme\Content\Images\exercise-header-img.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\exercise-left-bottom-f.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\exercise-left-bottom.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\exercise-left-top-f.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\exercise-left-top.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\facebook-icon.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\facebook.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\fancybox_loading.gif" />
+    <Content Include="Themes\MTBTheme\Content\Images\fancybox_overlay.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\fancybox_sprite.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\find-out-more.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\gold-center.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\gold-left.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\gold-right.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\gold.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\hero-001.jpg" />
+    <Content Include="Themes\MTBTheme\Content\Images\hero-002.jpg" />
+    <Content Include="Themes\MTBTheme\Content\Images\hero-003.jpg" />
+    <Content Include="Themes\MTBTheme\Content\Images\hero-004.jpg" />
+    <Content Include="Themes\MTBTheme\Content\Images\hero-005.jpg" />
+    <Content Include="Themes\MTBTheme\Content\Images\linkedin-icon.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\logo.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\quote-end.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\quote-start.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\see-video.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\services-box-content.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\services-box-left.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\services-box-right.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\services-left.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\services-logo1.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\services-logo2.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\silver.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\standard2-left.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\standard2-right.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\static-tab.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\static-text.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\subscribe.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\testimonials-box-left.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\testimonials-box-left2.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\testimonials-box-right.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\testimonials-box-right2.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\twitter-icon.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\twitter.png" />
+    <Content Include="Themes\MTBTheme\Content\Images\youtube.png" />
+    <Content Include="Themes\MTBTheme\Scripts\helpers\fancybox_buttons.png" />
+    <Content Include="Themes\MTBTheme\Scripts\helpers\jquery.fancybox-buttons.css" />
+    <Content Include="Themes\MTBTheme\Scripts\helpers\jquery.fancybox-buttons.js" />
+    <Content Include="Themes\MTBTheme\Scripts\helpers\jquery.fancybox-media.js" />
+    <Content Include="Themes\MTBTheme\Scripts\helpers\jquery.fancybox-thumbs.css" />
+    <Content Include="Themes\MTBTheme\Scripts\helpers\jquery.fancybox-thumbs.js" />
+    <Content Include="Themes\MTBTheme\Scripts\jquery.fancybox.js" />
+    <Content Include="Themes\MTBTheme\Scripts\jquery.fancybox.pack.js" />
+    <Content Include="Themes\MTBTheme\Scripts\libs\html5-3.4-respond-1.1.0.min.js" />
+    <Content Include="Themes\MTBTheme\Scripts\libs\jquery-1.7.2.min.js" />
+    <Content Include="Themes\MTBTheme\Scripts\libs\jquery.nivo.slider.js" />
+    <Content Include="Themes\MTBTheme\Scripts\plugins.js" />
+    <Content Include="Themes\MTBTheme\Scripts\script.js" />
+    <Content Include="Themes\MTBTheme\Styles\Banner.css" />
+    <Content Include="Themes\MTBTheme\Styles\Header.css" />
+    <Content Include="Themes\MTBTheme\Styles\Helpers.css" />
+    <Content Include="Themes\MTBTheme\Styles\Media320_568.css" />
+    <Content Include="Themes\MTBTheme\Styles\Nav.css" />
+    <Content Include="Themes\MTBTheme\Styles\Reset.css" />
+    <Content Include="Themes\MTBTheme\Styles\Site.css" />
+    <Content Include="Themes\MTBTheme\Styles\StandardPage1.css" />
+    <Content Include="Themes\MTBTheme\Styles\StandardPage2.css" />
+    <Content Include="Themes\MTBTheme\Styles\StandardPage3.css" />
+    <Content Include="Themes\MTBTheme\Theme.png" />
+    <Content Include="Themes\MTBTheme\Theme.txt" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Orchard.WarmupStarter\Orchard.WarmupStarter.csproj">
+      <Project>{5C0D5249-AEF5-4BB6-8F5F-057B91AC2D7A}</Project>
+      <Name>Orchard.WarmupStarter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Orchard\Orchard.Framework.csproj">
+      <Project>{2D1D92BB-4555-4CBE-8D0E-63563D6CE4C6}</Project>
+      <Name>Orchard.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tools\Orchard\Orchard.csproj">
+      <Project>{33B1BC8D-E292-4972-A363-22056B207156}</Project>
+      <Name>Orchard</Name>
+    </ProjectReference>
+    <ProjectReference Include="Core\Orchard.Core.csproj">
+      <Project>{9916839C-39FC-4CEB-A5AF-89CA7E87119F}</Project>
+      <Name>Orchard.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\Sample.Host.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Themes\MTBTheme\Zones\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Themes\MTBTheme\Content\Web.config" />
+    <Content Include="Themes\MTBTheme\Placement.info" />
+    <Content Include="Themes\MTBTheme\Scripts\Web.config" />
+    <Content Include="Themes\MTBTheme\Styles\Web.config" />
+    <Content Include="Themes\MTBTheme\Views\Branding.cshtml" />
+    <Content Include="Themes\MTBTheme\Views\Layout.cshtml" />
+    <Content Include="Themes\MTBTheme\Views\Web.config" />
+    <Content Include="Themes\MTBTheme\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Themes\MTBTheme\Views\Content.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Themes\MTBTheme\Views\Parts.Title.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Themes\MTBTheme\Views\User.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_html\.DS_Store" />
+    <Content Include="_html\css\.DS_Store" />
+    <Content Include="_html\js\libs\.DS_Store" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Themes\MTBTheme\Views\Menu.cshtml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <PropertyGroup>
+    <CopyAllFilesToSingleFolderForMsdeployDependsOn>
+      CustomCollectFiles;
+      $(CopyAllFilesToSingleFolderForMsdeployDependsOn);
+      </CopyAllFilesToSingleFolderForMsdeployDependsOn>
+  </PropertyGroup>
+  <Target Name="CustomCollectFiles">
+    <ItemGroup>
+      <Orchard-Web-Bins Include="bin\*" />
+      <SqlCeBinariesx86 Include="..\..\lib\sqlce\x86\**\*" />
+      <SqlCeBinariesx64 Include="..\..\lib\sqlce\amd64\**\*" />
+      <_CustomFiles Include="Media\**\*;App_Data\**\*;Modules\**\*;Themes\**\*;Core\**\*" Exclude="**\obj\**;**\bin\*.xml;**\.hgignore;**\.hgtags;**\.hg\**;@(Orchard-Web-Bins -> '**\%(Filename)%(Extension)');**\*.csproj.user;" />
+      <FilesForPackagingFromProject Include="%(_CustomFiles.Identity)">
+        <DestinationRelativePath>%(RelativeDir)%(Filename)%(Extension)</DestinationRelativePath>
+      </FilesForPackagingFromProject>
+      <_SqlCeBinariesx86Files Include="@(SqlCeBinariesx86);" />
+      <FilesForPackagingFromProject Include="%(_SqlCeBinariesx86Files.Identity)">
+        <DestinationRelativePath>bin\x86\%(RecursiveDir)%(Filename)%(Extension)</DestinationRelativePath>
+      </FilesForPackagingFromProject>
+      <_SqlCeBinariesx64Files Include="@(SqlCeBinariesx64);" />
+      <FilesForPackagingFromProject Include="%(_SqlCeBinariesx64Files.Identity)">
+        <DestinationRelativePath>bin\amd64\%(RecursiveDir)%(Filename)%(Extension)</DestinationRelativePath>
+      </FilesForPackagingFromProject>
+    </ItemGroup>
+  </Target>
+  <Target Name="CopySqlCeBinaries">
+    <ItemGroup>
+      <SqlCeBinariesx86 Include="$(ProjectDir)..\..\lib\sqlce\x86\**\*" />
+      <SqlCeBinariesx64 Include="$(ProjectDir)..\..\lib\sqlce\amd64\**\*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(SqlCeBinariesx86)" DestinationFolder="$(OutputPath)\x86\%(RecursiveDir)" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(SqlCeBinariesx86)" DestinationFolder="$(OutputPath)\x86\%(RecursiveDir)" SkipUnchangedFiles="true" />
+  </Target>
+  <Target Name="AfterBuild" DependsOnTargets="AfterBuildCompiler">
+    <PropertyGroup>
+      <AreasManifestDir>$(ProjectDir)\..\Manifests</AreasManifestDir>
+    </PropertyGroup>
+    <CallTarget Targets="CopySqlCeBinaries" />
+    <!-- If this is an area child project, uncomment the following line:
+    <CreateAreaManifest AreaName="$(AssemblyName)" AreaType="Child" AreaPath="$(ProjectDir)" ManifestPath="$(AreasManifestDir)" ContentFiles="@(Content)" />
+    -->
+    <!-- If this is an area parent project, uncomment the following lines:
+    <CreateAreaManifest AreaName="$(AssemblyName)" AreaType="Parent" AreaPath="$(ProjectDir)" ManifestPath="$(AreasManifestDir)" ContentFiles="@(Content)" />
+    <CopyAreaManifests ManifestPath="$(AreasManifestDir)" CrossCopy="false" RenameViews="true" />
+    -->
+  </Target>
+  <Target Name="AfterBuildCompiler" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)\..\$(ProjectName)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>30320</DevelopmentServerPort>
+          <DevelopmentServerVPath>/OrchardLocal</DevelopmentServerVPath>
+          <IISUrl>http://localhost:30320/OrchardLocal</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
