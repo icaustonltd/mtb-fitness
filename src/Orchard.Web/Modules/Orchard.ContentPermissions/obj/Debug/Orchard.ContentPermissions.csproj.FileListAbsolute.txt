@@ -71,3 +71,4 @@ C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Orchard.Web\Modules\Orchard.ContentP
 C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Orchard.Web\Modules\Orchard.ContentPermissions\bin\System.Net.Http.Formatting.xml
 C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Orchard.Web\Modules\Orchard.ContentPermissions\obj\Debug\Orchard.ContentPermissions.dll
 C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Orchard.Web\Modules\Orchard.ContentPermissions\obj\Debug\Orchard.ContentPermissions.pdb
+C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Orchard.Web\Modules\Orchard.ContentPermissions\obj\Debug\Orchard.ContentPermissions.csprojResolveAssemblyReference.cache

@@ -67,3 +67,4 @@ C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Orchard.Web\Modules\Orchard.Migratio
 C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Orchard.Web\Modules\Orchard.Migrations\bin\System.Net.Http.Formatting.xml
 C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Orchard.Web\Modules\Orchard.Migrations\obj\Debug\Orchard.Migrations.dll
 C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Orchard.Web\Modules\Orchard.Migrations\obj\Debug\Orchard.Migrations.pdb
+C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Orchard.Web\Modules\Orchard.Migrations\obj\Debug\Orchard.Migrations.csprojResolveAssemblyReference.cache

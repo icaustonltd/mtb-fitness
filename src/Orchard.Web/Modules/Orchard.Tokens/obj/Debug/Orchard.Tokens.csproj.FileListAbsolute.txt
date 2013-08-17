@@ -65,6 +65,6 @@ C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Orchard.Web\Modules\Orchard.Tokens\b
 C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Orchard.Web\Modules\Orchard.Tokens\bin\System.Web.Http.WebHost.xml
 C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Orchard.Web\Modules\Orchard.Tokens\bin\Iesi.Collections.xml
 C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Orchard.Web\Modules\Orchard.Tokens\bin\System.Net.Http.Formatting.xml
-C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Orchard.Web\Modules\Orchard.Tokens\obj\Debug\Orchard.Tokens.csprojResolveAssemblyReference.cache
 C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Orchard.Web\Modules\Orchard.Tokens\obj\Debug\Orchard.Tokens.dll
 C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Orchard.Web\Modules\Orchard.Tokens\obj\Debug\Orchard.Tokens.pdb
+C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Orchard.Web\Modules\Orchard.Tokens\obj\Debug\Orchard.Tokens.csprojResolveAssemblyReference.cache

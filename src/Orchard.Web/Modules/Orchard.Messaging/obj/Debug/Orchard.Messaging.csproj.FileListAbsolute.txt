@@ -63,3 +63,4 @@ C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Orchard.Web\Modules\Orchard.Messagin
 C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Orchard.Web\Modules\Orchard.Messaging\bin\System.Net.Http.Formatting.xml
 C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Orchard.Web\Modules\Orchard.Messaging\obj\Debug\Orchard.Messaging.dll
 C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Orchard.Web\Modules\Orchard.Messaging\obj\Debug\Orchard.Messaging.pdb
+C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Orchard.Web\Modules\Orchard.Messaging\obj\Debug\Orchard.Messaging.csprojResolveAssemblyReference.cache

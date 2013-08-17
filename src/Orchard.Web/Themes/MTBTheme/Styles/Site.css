@@ -34,3 +34,7 @@ body{ font:16px/26px Helvetica, Helvetica Neue, Arial; }
 		width:913px; /* 1140px - 10% for margins */
 	margin:0 auto;
 }
+
+a {
+    color: #9D9FA2;
+}

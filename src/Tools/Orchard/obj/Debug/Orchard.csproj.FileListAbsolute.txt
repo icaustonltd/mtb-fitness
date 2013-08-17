@@ -8,4 +8,3 @@ C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Tools\Orchard\bin\Debug\Orchard.exe
 C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Tools\Orchard\bin\Debug\Orchard.pdb
 C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Tools\Orchard\obj\Debug\Orchard.exe
 C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Tools\Orchard\obj\Debug\Orchard.pdb
-C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Tools\Orchard\obj\Debug\Orchard.csprojResolveAssemblyReference.cache

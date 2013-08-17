@@ -71,3 +71,4 @@ C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Orchard.Web\Core\bin\Iesi.Collection
 C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Orchard.Web\Core\bin\System.Net.Http.Formatting.xml
 C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Orchard.Web\Core\obj\Debug\Orchard.Core.dll
 C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Orchard.Web\Core\obj\Debug\Orchard.Core.pdb
+C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Orchard.Web\Core\obj\Debug\Orchard.Core.csprojResolveAssemblyReference.cache

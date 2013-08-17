@@ -19,3 +19,4 @@ C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Tools\Orchard.Tests\bin\Debug\Moq.pd
 C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Tools\Orchard.Tests\bin\Debug\Moq.xml
 C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Tools\Orchard.Tests\obj\Debug\Orchard.Tests.dll
 C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Tools\Orchard.Tests\obj\Debug\Orchard.Tests.pdb
+C:\Dev\OrchardCMS\dev.mtb-fitness.co.uk\src\Tools\Orchard.Tests\obj\Debug\Orchard.Tests.csprojResolveAssemblyReference.cache

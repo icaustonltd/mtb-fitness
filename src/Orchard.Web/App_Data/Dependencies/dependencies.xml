@@ -61,8 +61,26 @@
     </References>
   </Dependency>
   <Dependency>
+    <ModuleName>MTBContactBox</ModuleName>
+    <VirtualPath>~/Modules/MTBContactBox/bin/MTBContactBox.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
+    <References />
+  </Dependency>
+  <Dependency>
+    <ModuleName>MTBQuoteBox</ModuleName>
+    <VirtualPath>~/Modules/MTBQuoteBox/bin/MTBQuoteBox.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
+    <References />
+  </Dependency>
+  <Dependency>
     <ModuleName>MTBSlider</ModuleName>
     <VirtualPath>~/Modules/MTBSlider/bin/MTBSlider.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
+    <References />
+  </Dependency>
+  <Dependency>
+    <ModuleName>MTBSmallCTA</ModuleName>
+    <VirtualPath>~/Modules/MTBSmallCTA/bin/MTBSmallCTA.dll</VirtualPath>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <References />
   </Dependency>

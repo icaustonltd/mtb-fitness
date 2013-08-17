@@ -350,7 +350,10 @@
     <Content Include="Media\MTB\img\youtube.png" />
     <Content Include="Media\web.config" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="Themes\MTBTheme\Styles\ContactBox.css" />
+    <Content Include="Themes\MTBTheme\Styles\CtaBox.css" />
     <Content Include="Themes\MTBTheme\Styles\Footer.css" />
+    <Content Include="Themes\MTBTheme\Styles\Quote.css" />
     <Content Include="_html\border-radius.htc" />
     <Content Include="_html\contact.html" />
     <Content Include="_html\css\jquery.fancybox.css" />

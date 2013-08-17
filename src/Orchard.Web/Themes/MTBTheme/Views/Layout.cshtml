@@ -19,6 +19,9 @@
     Style.Include("Footer.css");
     Style.Include("Banner.css");
     Style.Include("StandardPage1.css");
+    Style.Include("CtaBox.css");
+    Style.Include("ContactBox.css");
+    Style.Include("Quote.css");
     Style.Include("Helpers.css");
 
     /* Some useful shortcuts or settings
@@ -117,8 +120,7 @@
 
 @if (Model.TripelFirst != null || Model.TripelSecond != null || Model.TripelThird != null)
 {
-<div id="layout-tripel-container">
-<div id="layout-tripel" class="group">@* as in beer *@
+<div id="box-container">
     @if (Model.TripelFirst != null)
     {
     <div id="tripel-first">
@@ -137,7 +139,6 @@
         @Zone(Model.TripelThird)
     </div>
     }
-</div>
 </div>
 }
 <div class="clear"></div>
