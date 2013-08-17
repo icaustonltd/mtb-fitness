@@ -1,0 +1,10 @@
+﻿Name: MTBContactBox
+AntiForgery: enabled
+Author: ICauston Ltd
+Website: http://orchardproject.net
+Version: 1.0
+OrchardVersion: 1.0
+Description: Contact Box widget
+Features:
+    MTBContactBox:
+        Description: Description for feature MTBContactBox.

@@ -1,0 +1,26 @@
+﻿@model MTBQuoteBox.Models.MTBQuoteBoxPart
+
+<fieldset>
+    <legend>MTB Quote Box</legend>
+
+    <div class="editor-label">
+        Main Body
+    </div>
+
+    <div class="editor-field">
+        @Script.Require("OrchardTinyMce")
+        @Html.TextAreaFor(model => model.MainBody, new { @class = "html tinymce" }) 
+        @Html.ValidationMessageFor(model => model.MainBody)
+    </div>
+
+    <div class="editor-label">
+        Author
+    </div>
+
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.Author)
+        @Html.ValidationMessageFor(model => model.Author)
+    </div>
+
+</fieldset>
+

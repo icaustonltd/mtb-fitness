@@ -1,0 +1,59 @@
+﻿@model MTBSmallCTA.Models.MTBSmallCTAPart
+
+<fieldset>
+    <legend>MTB Small CTA Widget</legend>
+
+    <div class="editor-label">
+        Item 1 Title
+    </div>
+
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.Item1Title)
+        @Html.ValidationMessageFor(model => model.Item1Title)
+    </div>
+
+    <div class="editor-label">
+        Item 1 CSS Class
+    </div>
+
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.Item1CSSClass)
+        @Html.ValidationMessageFor(model => model.Item1CSSClass)
+    </div>
+
+    <div class="editor-label">
+        Item 2 Title
+    </div>
+
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.Item2Title)
+        @Html.ValidationMessageFor(model => model.Item2Title)
+    </div>
+
+    <div class="editor-label">
+        Item 2 CSS Class
+    </div>
+
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.Item2CSSClass)
+        @Html.ValidationMessageFor(model => model.Item2CSSClass)
+    </div>
+
+    <div class="editor-label">
+        Item 3 Title
+    </div>
+
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.Item3Title)
+        @Html.ValidationMessageFor(model => model.Item3Title)
+    </div>
+
+    <div class="editor-label">
+        Item 3 CSS Class
+    </div>
+
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.Item3CSSClass)
+        @Html.ValidationMessageFor(model => model.Item3CSSClass)
+    </div>
+</fieldset>

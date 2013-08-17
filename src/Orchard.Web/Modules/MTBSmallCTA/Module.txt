@@ -1,0 +1,10 @@
+﻿Name: MTBSmallCTA
+AntiForgery: enabled
+Author: I Causton Ltd
+Website: http://orchardproject.net
+Version: 1.0
+OrchardVersion: 1.0
+Description: 3 CTA's with styling options
+Features:
+    MTBSmallCTA:
+        Description: Description for feature MTBSmallCTA.
