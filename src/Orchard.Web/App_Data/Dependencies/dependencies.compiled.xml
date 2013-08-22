@@ -19,6 +19,12 @@
     <Hash>923c0f8adf206ee1</Hash>
   </Dependency>
   <Dependency>
+    <ExtensionId>MTBBanner</ExtensionId>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/MTBBanner/bin/MTBBanner.dll</VirtualPath>
+    <Hash>48ee3527c1b07ab3</Hash>
+  </Dependency>
+  <Dependency>
     <ExtensionId>MTBContactBox</ExtensionId>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <VirtualPath>~/Modules/MTBContactBox/bin/MTBContactBox.dll</VirtualPath>

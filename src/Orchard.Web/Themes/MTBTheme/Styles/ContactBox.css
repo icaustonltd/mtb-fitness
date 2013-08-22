@@ -1,0 +1,58 @@
+﻿#contact-box {
+	margin-left:auto;
+	margin-right:auto;
+	float:none;
+}
+
+#contact-box {
+	background: #8c0305; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzhjMDMwNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZDFjMjQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #8c0305 0%, #ed1c24 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8c0305), color-stop(100%,#ed1c24)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #8c0305 0%,#ed1c24 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #8c0305 0%,#ed1c24 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #8c0305 0%,#ed1c24 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #8c0305 0%,#ed1c24 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c0305', endColorstr='#ed1c24',GradientType=0 ); /* IE6-8 */
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	
+	float:left;
+	width:293px;
+	height:100%;
+	min-height:283px;
+}
+
+#contact-box .formfield {width:270px;height:30px;margin:0 0 0 7px}
+#contact-box .area {width:270px;height:100px;margin:0 0 0 7px}
+#contact-box label {color:#fff;padding:0 0 2px 5px}
+#contact-box .name {margin:20px 0 0 0}
+#contact-box .email {margin:5px 0 0 0}
+#contact-box .message {margin:5px 0 0 0}
+#contact-box .send {margin:20px 20px 0 0;float:right;}
+#contact-box .send a {color:#fff;text-decoration:none}
+
+#contact-box h2 {
+	color:#FFFFFF;
+	margin: 15px 0 0 18px;
+}
+
+#contact-box p {
+	color:#FFFFFF;
+	font-size:20px;
+	font-style:italic;
+	margin: 15px 0 0 18px;
+	line-height: 20px;
+}
+
+#contact-box span {
+	display:block;
+	color:#FFFFFF;
+	font-size:34px;
+	font-style:italic;
+	margin: 14px 0 0 18px;
+	line-height: 34px;
+}

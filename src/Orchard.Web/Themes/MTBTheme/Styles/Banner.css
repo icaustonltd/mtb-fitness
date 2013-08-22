@@ -123,7 +123,7 @@
 	text-indent:-9999px;
 }
 .nivo-prevNav {
-	background: url("../img/banner-arrows.png") no-repeat scroll 0 0 transparent;
+	background: url("/Themes/MTBTheme/Content/Images/banner-arrows.png") no-repeat scroll 0 0 transparent;
     display: inline-block !important;
     float: left;
     height: 59px;
@@ -131,7 +131,7 @@
 }
 
 .nivo-nextNav {
-	background: url("../img/banner-arrows.png") no-repeat scroll -51px 0 transparent;
+	background: url("/Themes/MTBTheme/Content/Images/banner-arrows.png") no-repeat scroll -51px 0 transparent;
     display: inline-block !important;
     float: right;
     height: 59px;

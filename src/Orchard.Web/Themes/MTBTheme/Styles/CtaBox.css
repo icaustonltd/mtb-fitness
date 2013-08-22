@@ -1,0 +1,36 @@
+﻿#box-container {
+	margin-top:23px;
+}
+#box-container div h2 {
+	font-size:20px;
+	line-height:20px;
+	color:#FFFFFF;
+	margin-left:18px;
+	margin-top:14px;
+	font-style:italic;
+}
+#box-container div a {
+	display: block;
+    height: 50px;
+    width: 55px;
+}
+.box1 {
+	background: url(/Themes/MTBTheme/Content/Images/box1.png);
+	width:293px;
+	height:133px;
+	float:left;
+}
+.box2 {
+	background: url(/Themes/MTBTheme/Content/Images/box2.png);
+	width:293px;
+	height:136px;
+	float:left;
+	margin-left:16px;
+}
+.box3 {
+	background: url(/Themes/MTBTheme/Content/Images/box3.png);
+	width:293px;
+	height:142px;
+	float:left;
+	margin-left:18px;
+}
