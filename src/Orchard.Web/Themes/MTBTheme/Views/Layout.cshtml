@@ -66,6 +66,16 @@
 }
 
 @tag.StartElement
+
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=1414535212092482";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 @if (Model.Header != null)
 {
 
@@ -74,7 +84,7 @@
     
     <header>	
 			<div id="login-form">
-			&nbsp;    
+			<div class="fb-like" data-href="http://mtb-fitness.co.uk/" data-width="450" data-layout="button_count" data-show-faces="false" data-send="false"></div>    
 			</div>
 			<div id="social-links">
 			    <ul>
@@ -102,9 +112,7 @@
     <div id="main" class="wrapper clearfix">
         
         @if (Model.BeforeContent != null) {
-        <div id="banner" class="row">
             @Zone(Model.BeforeContent)
-        </div>
         }
 
         <!-- Content Start -->
